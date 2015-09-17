@@ -171,7 +171,8 @@ if(isset($_POST['submit']) && isset($_POST['package']) && isset($_POST['post_non
 
 	$multiple_to_recipients = array(
 			'enquiries@honeymoon.com.au',
-			'deals@romantictravel.com.au'
+			'deals@romantictravel.com.au',
+			'chengxianga2008@yahoo.com'
 	);
 
 	$content_here = <<<DOC

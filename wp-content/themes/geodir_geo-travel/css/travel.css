@@ -867,3 +867,11 @@ div.box-notification a:hover {
 	border-bottom: medium none;
 }
 
+.datepicker table tbody td[class="day"]{
+	color: #333;
+}
+
+.CustmHedaerBtns{
+	text-decoration: none !important;
+}
+

@@ -256,7 +256,7 @@
   	        <?php wp_nonce_field('post_nonce', 'post_nonce_field'); ?>
   	        <label class="pull-left footer-checkbox"><input type="checkbox" name="newsletter" value="newsletterChecked" checked>Get the latest deals &amp; specials.</label>
   	        <button type="submit" name="submit" value="<?php echo $modal_type[$i];?>" class="btn btn-success">Send It!</button> <p class="help-block pull-left text-danger hide">&nbsp; The form is not valid. </p>
-  	        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+  	        <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Cancel</button>
   	      </div>
   	      </form>
   	    </div>

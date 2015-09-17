@@ -325,8 +325,8 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
 			</div>
 			<div class="rightheader">
 				<div class="newAddtionalButtons">
-					<a href="javascript:void(0);" class="CustmHedaerBtns">Get a Quote</a>
-					<a href="javascript:void(0)" class="CustmHedaerBtns">Online Enquiry</a>
+					<a href="javascript:;" class="CustmHedaerBtns">Get a Quote</a>
+					<a href="#" class="enquiry_anchor CustmHedaerBtns" data-toggle="modal" data-target="#enquiryModal" data-package_quote="general">Online Enquiry</a>
 				</div>
 				<div class="EnquiryWidgetText">
 					<?php dynamic_sidebar('Header Right'); ?>

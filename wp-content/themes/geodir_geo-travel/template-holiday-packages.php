@@ -50,49 +50,52 @@ echo do_shortcode('[layerslider id="2"]');
 
                         </div>
 
-                        <div class="col-md-5 dropdown remove-right-padding">
+                        <div class="col-md-5 remove-right-padding">
+                        	<div class="dropdown">
 
-                        <button class="btn btn-default dropdown-toggle" id="package_dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-
-                           Destination
-
-                           <span class="caret"></span>
-
-                        </button>
-
-                        <ul id="package_list" class="dropdown-menu" role="menu" aria-labelledby="package_dropdown">
-
-                         
-
-   		    			  <?php 
-
-   		    			  $term_args = array( 'hide_empty=0' );
-
-   					  
-
-   		    			  $terms = get_terms( 'package_taxonomy', $term_args );
-
-   		    			  foreach ( $terms as $term ) {
-
-   		    			  ?>
-
-   	    				  <li role="presentation">
-
-     					  	  <a role="menuitem" tabindex="-1" href="#" data-slug="<?php echo $term->slug; ?>" ><?php echo $term->name; ?></a>
-
-   		    			  </li>
-
-   					  	
-
-   					      <?php
-
-   				    	  }
-
-   				    	  ?>
-
- 					    
-
- 					    </ul>
+		                        <button class="btn btn-default dropdown-toggle" id="package_dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+		
+		                           Destination
+		
+		                           <span class="caret"></span>
+		
+		                        </button>
+	
+		                        <ul id="package_list" class="dropdown-menu" role="menu" aria-labelledby="package_dropdown">
+		
+		                         
+		
+		   		    			  <?php 
+		
+		   		    			  $term_args = array( 'hide_empty=0' );
+		
+		   					  
+		
+		   		    			  $terms = get_terms( 'package_taxonomy', $term_args );
+		
+		   		    			  foreach ( $terms as $term ) {
+		
+		   		    			  ?>
+		
+		   	    				  <li role="presentation">
+		
+		     					  	  <a role="menuitem" tabindex="-1" href="#" data-slug="<?php echo $term->slug; ?>" ><?php echo $term->name; ?></a>
+		
+		   		    			  </li>
+		
+		   					  	
+		
+		   					      <?php
+		
+		   				    	  }
+		
+		   				    	  ?>
+		
+		 					    
+		
+		 					    </ul>
+	 					    
+	 					    </div>
 
                         </div>
 

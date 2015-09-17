@@ -863,3 +863,7 @@ div.box-notification a:hover {
 	border: 1px solid #eee !important;
 }
 
+.datepicker table tbody{
+	border-bottom: medium none;
+}
+

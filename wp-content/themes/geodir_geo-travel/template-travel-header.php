@@ -258,7 +258,7 @@ DOC;
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<style type="text/css">
+<style type="text/css">
 		.site-header .rightheader {
 		  float: right;
 		  padding: 10px;
@@ -308,160 +308,13 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
   margin-right: 10px;
 }
 .newAddtionalButtons > a.CustmHedaerBtns:hover { text-decoration:none; }
-	</style>
+
+</style>
 	
-  </head>
+</head>
   <body class="travel-style">
   
-  <!--
-  <div id="templatemo_mobile_menu_wap" class="col-xs-12 visible-sm visible-xs">
-        <p id="mobile_menu_btn"> <span class="glyphicon glyphicon-align-justify"></span></p>
-        <div id="mobile_menu" style="display: none;">
-            <div id="mobile_menu_hide_div">
-            <ul class="nav nav-stacked">
-              <li><a id="mobile_menu_hide_btn" href="#"><span class="glyphicon glyphicon-align-justify"></span></a>
-              </li>
-            </ul>
-            </div>
-            <div>
-            <form action="<?php echo get_home_url(null,"package-search"); ?>" method="get">                 
-                        <div class="date-mobile" >
-                          <input class="date-input-top" placeholder="Departure Date" data-provide="datepicker" data-date-format="yyyy-mm-dd" data-date-start-date="-1d" name="date" type="text">
-                          <input id="des-hidden_mobile" name="des" type="hidden">
-                          <input id="des-text-hidden_mobile" name="des-text" type="hidden">
-                        </div>
-                        <div class="dropdown" >
-                        <button class="btn btn-default dropdown-toggle" id="package_dropdown_mobile" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                           Destination
-                           <span class="caret"></span>
-                        </button>
-                        <ul id="package_list_mobile" class="dropdown-menu" role="menu" aria-labelledby="package_dropdown_mobile">
-                         
-   		    			  <?php 
-   		    			  $term_args = array( 'hide_empty=0' );
-   					  
-   		    			  $terms = get_terms( 'package_taxonomy', $term_args );
-   		    			  foreach ( $terms as $term ) {
-   		    			  ?>
-   	    				  <li role="presentation">
-     					  	  <a role="menuitem" tabindex="-1" href="#" data-slug="<?php echo $term->slug; ?>" ><?php echo $term->name; ?></a>
-   		    			  </li>
-   					  	
-   					      <?php
-   				    	  }
-   				    	  ?>
- 					    
- 					    </ul>
-                        </div>
-                        <div class="submit-mobile">
-                      
-                          <button id="package_search_submit_mobile" class="btn btn-warning submit-mobile-button" type="submit" value="Search">
-						    <i class="fa fa-search"></i> Search
-					      </button>
-                     
-                        </div>
- 			</form>
- 			</div>
-        
-            <ul class="nav nav-pills nav-stacked menu-mobile">
-                <li><a id="mobile_menu_phone" href="tel:1300 766 666"> <strong class="fa-phone"> 1300 766 666</strong></a></li>
-                <li><a href="<?php echo get_home_url();?>"><strong>Home Page </strong></a></li>
-                <li><a id="enquiry-button-1" href="<?php echo get_home_url(null,"package-enquiry"); ?>"><strong>Enquire NOW! </strong></a></li>
-                
-            </ul>
-        </div>
-  </div>
 
-  <div id="templatemo_banner_top" class="container_wapper hidden-sm hidden-xs">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <p class="header-p" >Contact us | <a class="mob_txt mob_align" href="tel:1300 766 666"> <strong>1300 766 666</strong></a></p>
-                </div>
-                <div class="col-md-9 header-p right">
-                  <div class="row">
-                    
-                      <div class="col-lg-1 col-md-1">
-                      </div>
-                      
-                    
-                      <form action="<?php echo get_home_url(null,"package-search"); ?>" method="get">                 
-                        <div class="col-md-3 remove-right-padding">
-                          <input class="date-input-top" placeholder="Departure Date" data-provide="datepicker" data-date-format="yyyy-mm-dd" data-date-start-date="-1d" name="date" type="text">
-                          <input id="des-hidden" name="des" type="hidden">
-                          <input id="des-text-hidden" name="des-text" type="hidden">
-                        </div>
-                        <div class="col-md-2 dropdown remove-right-padding">
-                        <button class="btn btn-default dropdown-toggle" id="package_dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                           Destination
-                           <span class="caret"></span>
-                        </button>
-                        <ul id="package_list" class="dropdown-menu" role="menu" aria-labelledby="package_dropdown">
-                         
-   		    			  <?php 
-   		    			  $term_args = array( 'hide_empty=0' );
-   					  
-   		    			  $terms = get_terms( 'package_taxonomy', $term_args );
-   		    			  foreach ( $terms as $term ) {
-   		    			  ?>
-   	    				  <li role="presentation">
-     					  	  <a role="menuitem" tabindex="-1" href="#" data-slug="<?php echo $term->slug; ?>" ><?php echo $term->name; ?></a>
-   		    			  </li>
-   					  	
-   					      <?php
-   				    	  }
-   				    	  ?>
- 					    
- 					    </ul>
-                        </div>
-                        <div class="visible-lg col-lg-1">
-                      
-                          <button id="package_search_submit1" type="submit" value="Search">
-						    <i class="fa fa-search"></i>
-					      </button>
-                     
-                        </div>
-                        
-                        <div class="visible-md col-md-1">
-                      
-                          <button id="package_search_submit2" type="submit" value="Search">
-						    <i class="fa fa-search"></i>
-					      </button>
-                     
-                        </div>
-                        
- 					  </form>
- 					  <div class="col-md-5 remove-left-padding">
- 				    	<a class="enquiry_anchor book-now" href="#" data-toggle="modal" data-target="#enquiryModal" data-package_quote="general"><strong>ENQUIRE NOW! </strong></a>  
- 				        <a class="enquiry_anchor"  href="#" onclick="window.open('<?php echo get_home_url(null,"discount-voucher"); ?>', 'myWin', 'toolbar=no, directories=no, top=50, left=200, status=yes, menubar=no, resizable=no, scrollbars=yes, width=1050, height=720'); return false" ><strong>Subscribe </strong></a>&nbsp;  &nbsp;                      
-                      
- 				      
- 				      </div>
- 				
- 					
- 				  </div>
-                </div>
-               
-                
-            </div>
-        </div>
-  </div>
-  
-  <div id="templatemo_banner_logo" class="container_wapper">
-        <div class="container">
-            <div class="row">
-                <div class="visible-lg visible-md center-block logo-group-block">
-                    <a href="<?php echo get_home_url();?>"><img src="<?php echo get_stylesheet_directory_uri();?>/images/rtlogo1.png" alt="logo"/></a>
-                    
-                </div>
-                <div class="visible-xs visible-sm center-block logo-group-block">
-                    <img src="<?php echo get_stylesheet_directory_uri();?>/images/rtlogo1.png" alt="logo"/>
-                    
-                </div>
-                
-            </div>
-        </div>
-  </div>-->
   
 	<header itemtype="http://schema.org/WPHeader" itemscope="itemscope" role="banner" class="site-header">
 		<div class="wrap" style="margin:0 auto;">

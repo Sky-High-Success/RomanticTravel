@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/**
+ *
+ *	Admin page styles for the plugin
+ *
+ *	@since 1.0
+ *
+ **/
+ 
+
+.gfb-inner {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #f1f1f1;
+}
+ 
+ .gfb-layout {
+	width: 100%;
+}
+ 
+ .gfb-layout .field-label {
+	width: 40%;
+}
+
+.gfb-def-list dd {
+	margin-left: 5px;
+}
+
+.gfb-def-list dt,
+.gfb-def-list dd {
+	display: inline-block;
+	margin-bottom: 1em;
+}
+
+.gfb-desc {
+	font-style: italic;
+}
+
+.gfb-highlight {
+	background: #e4f2fd;
+	padding: 10px;
+}
+
+.gfb-example {
+	margin: 5px 0;
+}
+
+.genesis_page_genesis-footer-builder .metabox-holder {
+	position: relative;
+}
+
+.genesis_page_genesis-footer-builder #column2-sortables {
+	position: absolute;
+	left: 750px;
+	top: 10px;
+}
+
+.gfb-sb-creds {
+	border-top: 1px solid #bfbfbf;
+	padding: 10px 0 0;
+	margin-top: 10px;
+}
+
+#tab-panel-gfb-ht-shortcodes dt {
+	font-weight: bold;
+}
+
+#tab-panel-gfb-ht-shortcodes dd {
+	margin-left: 15px;
+}
+
+@media only screen and (max-width: 1025px) {
+	
+	.genesis_page_genesis-footer-builder #column2-sortables{
+		position: relative;
+		left: 0;
+		top: 0;
+	}
+	
+}

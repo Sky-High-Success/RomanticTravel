@@ -1,0 +1,20 @@
+// vars 
+
+$c-border-light: #ccc; 
+$c-border-dark : #000;
+
+	// outside namespace 
+	@import "global"; 
+	@import "mixins"; 
+	
+#maxbuttons 
+{
+	@import "general"; 
+	@import "overview"; 
+	@import "editor"; 
+	@import "support";
+
+}
+	@import "media_button";
+
+

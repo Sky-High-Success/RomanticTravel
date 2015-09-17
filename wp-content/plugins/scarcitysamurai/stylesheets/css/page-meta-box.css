@@ -1,0 +1,115 @@
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+.ss-trial-message {
+  text-align: center;
+  padding: 10px 25px;
+  font-size: 1.5em;
+  color: white;
+  background: #a50000;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e1410a), color-stop(1, #a50000));
+  background: -ms-linear-gradient(bottom, #e1410a, #a50000);
+  background: -moz-linear-gradient(center bottom, #e1410a 0%, #a50000 100%);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.ss-page-campaign-page-opts {
+  display: none;
+  border-top: 1px solid #dfdfdf;
+  /*    Tabs menu    */
+
+  /* --------------- */
+
+  /*    Tabs content    */
+
+  /* ------------------ */
+
+}
+.ss-page-campaign-page-opts #ss-page-tabs {
+  margin: 12px 0 3px;
+}
+.ss-page-campaign-page-opts #ss-page-tabs li {
+  border-color: transparent;
+  border-style: solid solid none;
+  border-width: 1px 1px 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: inline;
+  font-size: 14px;
+  line-height: 34px;
+  padding: 13px 10px;
+}
+.ss-page-campaign-page-opts #ss-page-tabs li.ss-page-timer-tab.tabs a {
+  background-position: 0 0;
+}
+.ss-page-campaign-page-opts #ss-page-tabs li.ss-page-timer-tab a {
+  background-position: 0 -48px;
+}
+.ss-page-campaign-page-opts #ss-page-tabs li.ss-page-banners-tab.tabs a {
+  background-position: 0 -192px;
+}
+.ss-page-campaign-page-opts #ss-page-tabs li.ss-page-banners-tab a {
+  background-position: 0 -240px;
+}
+.ss-page-campaign-page-opts #ss-page-tabs li.ss-page-lock-tab.tabs a {
+  background-position: 0 -384px;
+}
+.ss-page-campaign-page-opts #ss-page-tabs li.ss-page-lock-tab a {
+  background-position: 0 -432px;
+}
+.ss-page-campaign-page-opts #ss-page-tabs li.tabs {
+  border-color: #dfdfdf;
+  background-color: white;
+}
+.ss-page-campaign-page-opts #ss-page-tabs li.tabs a {
+  color: #333;
+}
+.ss-page-campaign-page-opts #ss-page-tabs li a {
+  display: inline-block;
+  padding-left: 34px;
+  line-height: 24px;
+  background-image: url(../../images/page-meta-box-icons.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.ss-page-campaign-page-opts .ss-page-tab-panel {
+  height: auto;
+  max-height: none;
+  margin-bottom: 0.8em;
+}
+.ss-page-campaign-page-opts .ss-page-tab-panel.ss-trial_expired-access > div:first-child {
+  color: #999;
+}
+.ss-page-campaign-page-opts .ss-page-tab-panel.ss-trial_expired-access > div:first-child h2 {
+  color: #999;
+}
+.ss-page-campaign-page-opts .ss-page-tab-panel .ss-access-restriction-configuration,
+.ss-page-campaign-page-opts .ss-page-tab-panel .ss-count-down-timer-configuration,
+.ss-page-campaign-page-opts .ss-page-tab-panel .ss-header-banner-configuration,
+.ss-page-campaign-page-opts .ss-page-tab-panel .ss-footer-banner-configuration {
+  margin-top: 2em;
+}
+.ss-page-campaign-page-opts .ss-page-tab-panel .ss-opts {
+  display: none;
+  margin-bottom: 2em;
+}
+.ss-page-campaign-page-opts .ss-page-tab-panel .ss-no-pages-with-opt-in-form {
+  display: none;
+}
+.ss-page-campaign-page-opts .ss-page-tab-panel ul.ul-radio li input.ul-radio {
+  margin-left: -20px;
+  margin-right: 5px;
+}

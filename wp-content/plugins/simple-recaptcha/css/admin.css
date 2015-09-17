@@ -1,0 +1,15 @@
+/**
+ * Simple reCAPTCHA settings page
+ */
+
+#wpmsrc-keys input[type=text] {
+	width: 350px;
+}
+
+.form-table th {
+	width: 180px;
+}
+
+#recaptcha_table {
+	background: #fff;
+}

@@ -1,0 +1,50 @@
+/**
+ * Style Name: Inline Banner Style #3
+ *
+ * Variables:
+ * TEXT_COLOR: #F0EE81
+ * TEXT_FONT_SIZE: 30px
+ * TEXT_FONT_FAMILY: Arial
+ * BACKGROUND_COLOR: #cf0000
+ * BACKGROUND_GRADIENT_TOP: lighten(BACKGROUND_COLOR, 20)
+ * BACKGROUND_GRADIENT_BOTTOM: darken(BACKGROUND_COLOR, 20)
+ * WIDTH: 300px
+ */
+
+.ss-banner {
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(BACKGROUND_GRADIENT_TOP), to(BACKGROUND_GRADIENT_BOTTOM));
+	background-image: -webkit-linear-gradient(top, BACKGROUND_GRADIENT_TOP, BACKGROUND_GRADIENT_BOTTOM);
+	background-color: BACKGROUND_COLOR;
+	background-image: -moz-linear-gradient(top, BACKGROUND_GRADIENT_TOP, BACKGROUND_GRADIENT_BOTTOM);
+	background-image: -ms-linear-gradient(top, BACKGROUND_GRADIENT_TOP, BACKGROUND_GRADIENT_BOTTOM);
+	background-image: -o-linear-gradient(top, BACKGROUND_GRADIENT_TOP, BACKGROUND_GRADIENT_BOTTOM);
+	background-image: linear-gradient(top, BACKGROUND_GRADIENT_TOP, BACKGROUND_GRADIENT_BOTTOM);
+	background-repeat: repeat-x;
+	color: TEXT_COLOR;
+	font-family: TEXT_FONT_FAMILY, sans-serif;
+	width: WIDTH;
+	margin-left: auto;
+	margin-right: auto;
+	font-style: normal;
+	border-radius: 15px;
+	box-shadow: 0 0 10px #777;
+}
+
+.ss-banner .ss-banner-element-wrapper {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	margin: 0 5px;
+	vertical-align: middle;
+	position: relative;
+}
+
+.ss-banner .ss-banner-content {
+	font-size: TEXT_FONT_SIZE;
+	line-height: TEXT_FONT_SIZE;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+	text-align: center;
+	padding: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+}

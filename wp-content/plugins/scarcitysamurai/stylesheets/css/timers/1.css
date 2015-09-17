@@ -1,0 +1,72 @@
+/**
+ * Style Name: Timer Style #1
+ *
+ * Variables:
+ * TIMER_TEXT_COLOR: #000000
+ * TIMER_FONT_SIZE: 32px
+ * TIMER_FONT_FAMILY: Arial
+ * LABELS_TEXT_COLOR: #ffffff
+ * LABELS_BACKGROUND_COLOR: darken(BANNER_BACKGROUND_COLOR, 20)
+ * LABELS_FONT_SIZE: 9px
+ * LABELS_FONT_FAMILY: Arial
+ */
+
+.ss-timer {
+	position: relative;
+	padding-top: 20px;
+	top: -20px;
+	margin-bottom: -20px;
+}
+
+.ss-timer .ss-timer-days,
+.ss-timer .ss-timer-hours,
+.ss-timer .ss-timer-minutes,
+.ss-timer .ss-timer-seconds {
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+.ss-timer .ss-timer-label {
+	display: block;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-family: LABELS_FONT_FAMILY, sans-serif;
+	color: LABELS_TEXT_COLOR;
+	background: LABELS_BACKGROUND_COLOR;
+	padding: 2px 7px;
+	font-weight: normal;
+	font-size: LABELS_FONT_SIZE;
+	margin: 0 0 4px 0;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+.ss-timer .ss-timer-value {
+	display: block;
+	min-width: 40px;
+	height: 32px;
+	line-height: 32px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #ffffff;
+	*zoom: 1;
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFFFFFFF');
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(3%, #e6e6e6), color-stop(54%, #e5e5e5), color-stop(55%, #c5c5c5), color-stop(55%, #ffffff), color-stop(100%, #ffffff));
+	background-image: -webkit-linear-gradient(top, #ffffff 0%, #e6e6e6 3%, #e5e5e5 54%, #c5c5c5 55%, #ffffff 55%, #ffffff 100%);
+	background-image: -moz-linear-gradient(top, #ffffff 0%, #e6e6e6 3%, #e5e5e5 54%, #c5c5c5 55%, #ffffff 55%, #ffffff 100%);
+	background-image: -o-linear-gradient(top, #ffffff 0%, #e6e6e6 3%, #e5e5e5 54%, #c5c5c5 55%, #ffffff 55%, #ffffff 100%);
+	background-image: linear-gradient(top, #ffffff 0%, #e6e6e6 3%, #e5e5e5 54%, #c5c5c5 55%, #ffffff 55%, #ffffff 100%);
+	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+	color: TIMER_TEXT_COLOR;
+	font-size: TIMER_FONT_SIZE;
+	padding: 3px;
+	margin: 2px 0;
+	font-family: TIMER_FONT_FAMILY, sans-serif;
+	text-align: center;
+}

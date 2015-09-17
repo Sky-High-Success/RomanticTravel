@@ -1,0 +1,26 @@
+/* ----------------------------- */
+/*    Generic Dialog Settings    */
+/* ----------------------------- */
+.ss-dialog .ss-dialog-notice {
+  color: #EF3C3C;
+  font-weight: bold;
+  display: none;
+}
+.ss-dialog .ss-dialog-title {
+  display: inline-block;
+}
+.ss-dialog .buttons {
+  text-align: right;
+}
+/* --------------------- */
+/*    Create New Page    */
+/* --------------------- */
+#ss-create-new-page-dialog .ss-dialog-title {
+  width: 80px;
+}
+#ss-create-new-page-dialog .ss-page-type {
+  width: 100px;
+}
+#ss-create-new-page-dialog .ss-new-page-title {
+  width: 370px;
+}

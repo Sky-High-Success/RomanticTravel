@@ -1,0 +1,20 @@
+#new_campaign_wrapper {
+  margin-top: 20px;
+  font-size: 1.3em;
+}
+#new_campaign_wrapper input[type="text"],
+#new_campaign_wrapper select {
+  font-size: 1.15em;
+  padding: 0.5em 0.5em 0.3em;
+}
+#new_campaign_wrapper p label:first-child {
+  display: inline-block;
+  width: 130px;
+  text-align: right;
+}
+#new_campaign_wrapper #campaign_name {
+  width: 690px;
+}
+#new_campaign_wrapper #create_button_wrapper {
+  margin-top: 20px;
+}

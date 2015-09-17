@@ -1,0 +1,97 @@
+:focus {
+  outline: none;
+}
+.ss-hidden {
+  display: none;
+}
+.ss-error,
+.ss-notice,
+.ss-error {
+  margin-bottom: 10px;
+}
+.ss-notice {
+  border: 1px solid #aca;
+  background: #efe;
+  padding: 10px 20px;
+}
+.ss-warning {
+  border: 1px solid #cba;
+  background: #fff5ee;
+  padding: 10px 20px;
+}
+.ss-error {
+  border: 1px solid #caa;
+  background: #fee;
+  padding: 10px 20px;
+}
+.ss-days-input,
+.ss-hours-input,
+.ss-minutes-input,
+.ss-seconds-input {
+  width: 40px;
+}
+.ss-show-value-input {
+  width: 50px;
+}
+.ss-year-input {
+  width: 80px;
+}
+.ss-sub {
+  padding-left: 20px;
+}
+.ss-page-url {
+  width: 500px;
+}
+.ss-wizard-evergreen-optin-copy-to-clipboard-button,
+.ss-wizard-evergreen-pageload-copy-to-clipboard-button,
+.ss-wizard-fixed-date-multi-copy-to-clipboard-button,
+.ss-wizard-fixed-date-single-copy-to-clipboard-button,
+.ss-edit-campaign-copy-to-clipboard-button {
+  visibility: hidden;
+}
+.ss-page-status-publish .ss-wizard-evergreen-optin-copy-to-clipboard-button,
+.ss-page-status-publish .ss-wizard-evergreen-pageload-copy-to-clipboard-button,
+.ss-page-status-publish .ss-wizard-fixed-date-multi-copy-to-clipboard-button,
+.ss-page-status-publish .ss-wizard-fixed-date-single-copy-to-clipboard-button,
+.ss-page-status-publish .ss-edit-campaign-copy-to-clipboard-button {
+  visibility: visible;
+}
+.ss-copy-to-clipboard-confirmation-message {
+  display: none;
+  color: #0AAD09;
+  font-weight: bold;
+}
+.ss-dialog {
+  display: none;
+}
+#ss-logo-small.icon32 {
+  background-image: url(../../images/scarcity-samurai-logo-small.png);
+}
+input[type="number"] {
+  text-align: right;
+}
+.ss-text-input {
+  height: 26px;
+}
+.ss-select {
+  position: relative;
+  top: -2px;
+}
+ul.ul-radio li {
+  padding-left: 40px;
+}
+.ss-create-new-page-link {
+  margin-left: 10px;
+  line-height: 30px;
+}
+#footer {
+  display: none;
+}
+/* ---------------------------- */
+/*    jQuery UI Autocomplete    */
+/* ---------------------------- */
+.ui-autocomplete {
+  max-height: 125px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

@@ -1,0 +1,164 @@
+.ss-wizard-page .menu-edit {
+  display: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #dfdfdf;
+  max-width: 780px;
+}
+.ss-wizard-page #nav-menu-header {
+  padding-left: 0;
+}
+.ss-wizard-page #nav-menu-header ul {
+  margin: 0;
+  padding: 0;
+}
+.ss-wizard-page #nav-menu-header ul li {
+  float: left;
+  line-height: 36px;
+  margin: 0;
+  padding: 0 10px 0 20px;
+  position: relative;
+  background-color: #dfdfdf;
+}
+.ss-wizard-page #nav-menu-header ul li:after {
+  content: " ";
+  display: block;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 10px solid #dfdfdf;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -18px;
+  z-index: 2;
+}
+.ss-wizard-page #nav-menu-header ul li:before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 10px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+.ss-wizard-page #nav-menu-header ul li.current,
+.ss-wizard-page #nav-menu-header ul li.done {
+  color: white;
+  background-color: #298CBA;
+}
+.ss-wizard-page #nav-menu-header ul li.done {
+  cursor: pointer;
+}
+.ss-wizard-page #nav-menu-header ul li.current a,
+.ss-wizard-page #nav-menu-header ul li.done a {
+  color: white;
+}
+.ss-wizard-page #nav-menu-header ul li.done a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ss-wizard-page #nav-menu-header ul li.done a:hover {
+  color: #BEE0F0;
+}
+.ss-wizard-page #nav-menu-header ul li.current:after,
+.ss-wizard-page #nav-menu-header ul li.done:after {
+  border-left-color: #298CBA;
+}
+.ss-wizard-page #nav-menu-header ul li a {
+  text-decoration: none;
+  cursor: default;
+  color: #21759B;
+}
+.ss-wizard-page #post-body {
+  padding: 10px;
+  border-width: 1px 0;
+  border-style: solid;
+}
+.ss-wizard-page #nav-menu-footer {
+  padding-top: 8px;
+  padding-bottom: 6px;
+  line-height: 23px;
+}
+.ss-wizard-page #nav-menu-footer .left {
+  float: left;
+}
+.ss-wizard-page #nav-menu-footer .right {
+  float: right;
+}
+.ss-wizard-validation-errors {
+  display: none;
+}
+/* ----------------- */
+/*    All Wizards    */
+/* ----------------- */
+.ss-wizard-campaign-name {
+  width: 300px;
+}
+/* ------------------------- */
+/*    Evergreen Page Load    */
+/* ------------------------- */
+.ss-wizard-evergreen-pageload-unpublished-page-warning,
+.ss-wizard-evergreen-pageload-page-link {
+  display: none;
+}
+/* ---------------------- */
+/*    Evergreen Opt-in    */
+/* ---------------------- */
+.ss-wizard-evergreen-optin-auto-responder-info,
+.ss-wizard-evergreen-optin-remove-content-page,
+.ss-wizard-evergreen-optin-unpublished-pages-warning,
+.ss-wizard-evergreen-optin-unable-to-detect-optin-form-on-squeeze-page,
+.ss-wizard-evergreen-optin-page-links {
+  display: none;
+}
+.ss-wizard-evergreen-optin-token-setup-instructions {
+  display: none;
+}
+.ss-wizard-evergreen-optin-token-setup-instructions .instructions-link {
+  display: none;
+}
+.ss-wizard-evergreen-optin-unpublished-pages-warning {
+  display: none;
+}
+.ss-wizard-evergreen-optin-unpublished-pages-warning .single,
+.ss-wizard-evergreen-optin-unpublished-pages-warning .multiple {
+  display: none;
+}
+/* ----------------------- */
+/*    Fixed Date Single    */
+/* ----------------------- */
+.ss-wizard-fixed-date-single-time-discrepancy-warning,
+.ss-wizard-fixed-date-single-unpublished-page-warning,
+.ss-wizard-fixed-date-single-page-link {
+  display: none;
+}
+/* ---------------------- */
+/*    Fixed Date Multi    */
+/* ---------------------- */
+.ss-wizard-fixed-date-multi-auto-responder-info,
+.ss-wizard-fixed-date-multi-time-discrepancy-warning,
+.ss-wizard-fixed-date-multi-remove-content-page,
+.ss-wizard-fixed-date-multi-unpublished-pages-warning,
+.ss-wizard-fixed-date-multi-unable-to-detect-optin-form-on-squeeze-page,
+.ss-wizard-fixed-date-multi-page-links {
+  display: none;
+}
+.ss-wizard-fixed-date-multi-token-setup-instructions {
+  display: none;
+}
+.ss-wizard-fixed-date-multi-token-setup-instructions .instructions-link {
+  display: none;
+}
+.ss-wizard-fixed-date-multi-unpublished-pages-warning {
+  display: none;
+}
+.ss-wizard-fixed-date-multi-unpublished-pages-warning .single,
+.ss-wizard-fixed-date-multi-unpublished-pages-warning .multiple {
+  display: none;
+}

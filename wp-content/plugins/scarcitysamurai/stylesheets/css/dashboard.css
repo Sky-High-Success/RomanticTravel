@@ -1,0 +1,328 @@
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+.ss-upgrade-button-style {
+  background-color: #e13f09;
+  background-image: linear-gradient(to bottom, #f5490f, #e13f09);
+  border-color: #e13f09 #e13f09 #c93808;
+  box-shadow: 0 1px 0 rgba(222, 141, 115, 0.5) inset;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.ss-upgrade-button-style:hover,
+.ss-upgrade-button-style:focus {
+  background-color: #f0430a;
+  background-image: linear-gradient(to bottom, #f54c14, #e13f09);
+  border-color: #bf3608;
+  box-shadow: 0 1px 0 rgba(222, 141, 115, 0.4) inset;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+/* --------------- */
+/*    Dashboard    */
+/* --------------- */
+div.ss-welcome-panel {
+  position: relative;
+  background: #a50000;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e1410a), color-stop(1, #a50000));
+  background: -ms-linear-gradient(bottom, #e1410a, #a50000);
+  background: -moz-linear-gradient(center bottom, #e1410a 0%, #a50000 100%);
+  border-color: #333;
+  padding-left: 120px;
+  overflow: hidden;
+}
+div.ss-welcome-panel .ss-welcome-message {
+  font-size: 1.2em;
+}
+div.ss-welcome-panel .ss-welcome-message h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5em;
+  color: #64D2F5;
+  text-shadow: #2D73B9 1px 1px 1px;
+}
+div.ss-welcome-panel .ss-logo {
+  position: absolute;
+  left: -87px;
+  top: -55px;
+}
+div.ss-welcome-panel .welcome-panel-content {
+  position: relative;
+  margin-left: 60px;
+  max-width: none;
+  z-index: 1;
+}
+div.ss-welcome-panel .welcome-panel-content p {
+  color: white;
+  line-height: 1.4em;
+  font-size: 1.2em;
+}
+div.ss-welcome-panel .welcome-panel-update-available {
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
+div.ss-welcome-panel .welcome-panel-update-available p {
+  position: absolute;
+  line-height: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0 18px 0 133px;
+  color: #000;
+  font-weight: bold;
+}
+div.ss-welcome-panel .welcome-panel-update-background {
+  position: absolute;
+  background-color: #ffe;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  opacity: 0.8;
+}
+.ss-wizards ul {
+  margin: 0;
+}
+.ss-wizards li {
+  display: block;
+  margin: 0;
+}
+.ss-wizards li.inside {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 10px 90px 10px 80px;
+  border: 1px solid transparent;
+  border-top: 1px solid white;
+  border-bottom: 1px solid #dfdfdf;
+  overflow: hidden;
+}
+.ss-wizards li.inside .ss-wizard-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.ss-wizards li.inside .ss-wizard-name {
+  color: #21759B;
+}
+.ss-wizards li.inside .description {
+  display: block;
+  font-style: normal;
+}
+.ss-wizards li.inside .description em {
+  display: block;
+  color: #7C2D13;
+}
+.ss-wizards li.inside .ss-wizard-button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.ss-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+
+  padding-top: 25px;
+  height: 0;
+  background: black;
+}
+.ss-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.postbox h3.nodrag {
+  cursor: auto !important;
+}
+/* ----------- */
+/*    Trial    */
+/* ----------- */
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content {
+  position: relative;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-welcome-message,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-welcome-message {
+  margin-right: 660px;
+}
+@media (max-width: 1400px) {
+  .ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-welcome-message p,
+  .ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-welcome-message p {
+    display: none;
+  }
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner {
+  position: absolute;
+  right: 12px;
+  top: 0;
+  padding: 20px;
+  background-color: #fff;
+  font-size: 1.3em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #000;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner > div:first-child,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner > div:first-child {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner > div:nth-child(2),
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner > div:nth-child(2) {
+  margin-top: 15px;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner > div > div,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner > div > div {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner > div > div:first-child,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner > div > div:first-child {
+  width: 373px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner > div > div:first-child.ss-trial-expires-in,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner > div > div:first-child.ss-trial-expires-in {
+  font-size: 1.06em;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner > div > div:nth-child(2),
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner > div > div:nth-child(2) {
+  width: 215px;
+  text-align: center;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner > div > div.ss-upgrade-ss-to-pro,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner > div > div.ss-upgrade-ss-to-pro {
+  font-size: 1.05em;
+  font-weight: normal;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner .ss-upgrade-now-button,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner .ss-upgrade-now-button {
+  position: relative;
+  left: 5px;
+  width: 100%;
+  height: auto;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0.5em 0.85em;
+  white-space: normal;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard {
+  white-space: nowrap;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard .ss-timer-days,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard .ss-timer-days,
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard .ss-timer-hours,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard .ss-timer-hours,
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard .ss-timer-minutes,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard .ss-timer-minutes,
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard .ss-timer-seconds,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard .ss-timer-seconds {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard .ss-timer-label,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard .ss-timer-label {
+  display: block;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background: #2f7692;
+  padding: 2px 7px;
+  font-weight: normal;
+  font-size: 9px;
+  margin: 0 0 4px 0;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard .ss-timer-value,
+.ss-welcome-panel.ss-trial_not_expired-access .welcome-panel-content > div.ss-trial-banner .ss-timer-dashboard .ss-timer-value {
+  display: block;
+  min-width: 40px;
+  height: 32px;
+  line-height: 32px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  *zoom: 1;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(3%, #b7b7b7), color-stop(54%, #e6e6e6), color-stop(55%, #c5c5c5), color-stop(55%, #ffffff), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #b7b7b7 3%, #e6e6e6 54%, #c5c5c5 55%, #ffffff 55%, #ffffff 100%);
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #b7b7b7 3%, #e6e6e6 54%, #c5c5c5 55%, #ffffff 55%, #ffffff 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #b7b7b7 3%, #e6e6e6 54%, #c5c5c5 55%, #ffffff 55%, #ffffff 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #b7b7b7 3%, #e6e6e6 54%, #c5c5c5 55%, #ffffff 55%, #ffffff 100%);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  color: #000000;
+  font-size: 32px;
+  padding: 3px;
+  margin: 2px 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.ss-welcome-panel.ss-trial_not_expired-access {
+  min-height: 180px;
+}
+.ss-welcome-panel.ss-trial_expired-access {
+  min-height: 135px;
+}
+.ss-welcome-panel.ss-trial_expired-access .welcome-panel-content div.ss-trial-banner .ss-upgrade-now-button {
+  font-size: 0.75em;
+}
+li.inside.ss-unavailable .ss-wizard-name,
+li.inside.ss-unavailable .ss-wizard-description,
+li.inside.ss-unavailable .ss-wizard-description em {
+  color: #bbbbbb;
+}
+li.inside.ss-unavailable .ss-upgrade-button {
+  background-color: #e13f09;
+  background-image: linear-gradient(to bottom, #f5490f, #e13f09);
+  border-color: #e13f09 #e13f09 #c93808;
+  box-shadow: 0 1px 0 rgba(222, 141, 115, 0.5) inset;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+li.inside.ss-unavailable .ss-upgrade-button:hover,
+li.inside.ss-unavailable .ss-upgrade-button:focus {
+  background-color: #f0430a;
+  background-image: linear-gradient(to bottom, #f54c14, #e13f09);
+  border-color: #bf3608;
+  box-shadow: 0 1px 0 rgba(222, 141, 115, 0.4) inset;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}

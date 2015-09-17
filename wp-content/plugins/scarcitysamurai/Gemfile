@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+ruby '1.9.3'
+gem 'less'
+gem 'libv8', '3.16.14.3'
+gem 'therubyracer'
+gem 'compass'

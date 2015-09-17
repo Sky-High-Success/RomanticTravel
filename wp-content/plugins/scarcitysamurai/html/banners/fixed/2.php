@@ -1,0 +1,1 @@
+<div class='ss-banner'><div class='ss-banner-content'><?php _e( $content ); ?></div></div>

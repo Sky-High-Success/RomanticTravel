@@ -1,0 +1,1 @@
+<div class="ss-banner ss-horizontal-banner"><div class='ss-banner-content'><?php echo $content; ?></div></div>

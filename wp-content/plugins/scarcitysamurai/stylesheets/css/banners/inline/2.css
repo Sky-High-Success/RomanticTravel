@@ -1,0 +1,37 @@
+/**
+ * Style Name: Inline Banner Style #2
+ *
+ * Variables:
+ * TEXT_COLOR: #F0EE81
+ * TEXT_FONT_SIZE: 30px
+ * TEXT_FONT_FAMILY: Arial
+ * WIDTH: 300px
+ */
+
+.ss-banner {
+	color: TEXT_COLOR;
+	font-family: TEXT_FONT_FAMILY, sans-serif;
+	width: WIDTH;
+	margin-left: auto;
+	margin-right: auto;
+	font-style: normal;
+}
+
+.ss-banner .ss-banner-element-wrapper {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	margin: 0 5px;
+	vertical-align: middle;
+	position: relative;
+}
+
+.ss-banner .ss-banner-content {
+	font-size: TEXT_FONT_SIZE;
+	line-height: TEXT_FONT_SIZE;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+	text-align: center;
+	padding: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+}

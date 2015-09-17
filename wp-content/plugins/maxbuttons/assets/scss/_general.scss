@@ -1,0 +1,75 @@
+
+/* Base element - do not use this in layout since this conflict with other plugins. 
+
+*/
+.message {
+	//border: solid 1px #e6db55;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 10px;
+	margin: 10px 0px 20px 0px;
+	clear: both;
+
+
+}
+
+
+
+.mb-message {
+	@extend .message;
+ 
+	&.error {
+ 
+		font-weight: 700;
+	}
+	&.shortcode {
+		border: solid 1px #e6db55;
+		background-color: #ffffe0; 
+		
+	}
+}
+
+.max-modal {
+	display: none;
+	width: 600px;
+	//min-height: 50%;
+	padding: 10px 20px 20px 20px;
+	display: none;
+	background: #ffffff;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.7);
+	
+	.modal_header {
+		font-size: 18px;
+		font-weight: 700;
+	}	
+	.modal_close {
+		content: X; 
+		position: absolute; 
+		right: 5px; 
+		top: 5px;
+		cursor: pointer;
+	}
+
+}
+
+
+
+ 
+.max-modal textarea#maxbutton-css {
+	width: 600px;
+	height: 400px;
+	font-family: Consolas, 'Courier New', 'Courier';
+	font-size: 13px;
+	white-space: normal;
+	word-wrap: break-word;
+	overflow: none;
+}
+
+
+

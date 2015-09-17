@@ -1,0 +1,75 @@
+/**
+ * Style Name: Timer Style #2
+ *
+ * Variables:
+ * TIMER_TEXT_COLOR: #000000
+ * TIMER_FONT_SIZE: 32px
+ * TIMER_FONT_FAMILY: Arial
+ * LABELS_TEXT_COLOR: #ffffff
+ * LABELS_BACKGROUND_COLOR: darken(BANNER_BACKGROUND_COLOR, 40)
+ * LABELS_FONT_SIZE: 12px
+ * LABELS_FONT_FAMILY: Arial
+ */
+
+.ss-timer {
+	position: relative;
+	padding-top: 4px;
+	top: -4px;
+	margin-bottom: -4px;
+}
+
+.ss-timer-days,
+.ss-timer-hours,
+.ss-timer-minutes,
+.ss-timer-seconds {
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #134519;
+	padding: 2px;
+	font-weight: normal;
+	line-height: 1.2em;
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFCCCCCC', endColorstr='#FFFFFFFF');
+	background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, color-stop(0%, #cccccc), color-stop(100%, #ffffff));
+	background-image: -webkit-linear-gradient(top right, #cccccc 0%, #ffffff 100%);
+	background-image: -moz-linear-gradient(top right, #cccccc 0%, #ffffff 100%);
+	background-image: -o-linear-gradient(top right, #cccccc 0%, #ffffff 100%);
+	background-image: linear-gradient(top right, #cccccc 0%, #ffffff 100%);
+	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding-bottom: 18px;
+	position: relative;
+}
+
+.ss-timer-label {
+	font-family: LABELS_FONT_FAMILY, sans-serif;
+	font-size: LABELS_FONT_SIZE;
+	color: LABELS_TEXT_COLOR;
+	background: LABELS_BACKGROUND_COLOR;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	position: absolute;
+	bottom: 1px;
+	left: 1px;
+	right: 1px;
+	text-align: center;
+}
+
+.ss-timer-value {
+  color: TIMER_TEXT_COLOR;
+  font-size: TIMER_FONT_SIZE;
+  font-family: TIMER_FONT_FAMILY, sans-serif;
+  min-width: 35px;
+  height: 32px;
+  line-height: 32px;
+  padding: 3px 8px;
+  margin: 2px 0;
+  overflow: hidden;
+}

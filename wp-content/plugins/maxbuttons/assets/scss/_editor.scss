@@ -1,0 +1,290 @@
+.input {
+	.input_url  
+	{
+		width: 600px;
+	}
+}
+
+ .option-container {
+	margin-bottom: 20px;
+	border: solid 1px #cccccc;
+	@include border-radius(3px,3px,3px,3px);
+	
+//	border-radius: 3px;
+//	-moz-border-radius: 3px;
+//	-webkit-border-radius: 3px;
+	background-color: #fff;
+	
+	.title {	
+ 
+		font-size: 18px;
+		//font-weight: bold;
+		//color: #fff;
+		padding: 9px 8px 9px 10px;
+		text-align: left;
+		text-shadow: 0px 1px 0px #ffffff;
+		position: relative;
+		//background-color: #bbb;
+	}
+	.section-title { 
+		padding: 15px; 
+		margin-top: 10px;
+		//background-color: orange;
+		font-weight: 700;
+		font-size: 16px;
+	}
+
+ 	// new struct layout
+		.section-title { 
+			background-color: #fff; 
+			
+		}
+		.option { 
+			//position: relative;
+			label { 
+				display: inline-block;
+				width: 150px; 
+				font-weight: 700;
+			} 
+		
+		}
+		.help { 
+ 
+			position: relative; 
+			width: 15px; 
+			height: 15px; 
+			font-size: 18px;
+			margin-left: 10px; 
+			
+			span {
+				font-family: "Open Sans";
+				font-size: 13px;
+				background-color:#808080;
+				color: #fff;
+				position: absolute;
+				display: none;
+				padding: 10px 5px;
+			 	top: -7px; 
+			 	left: 25px;
+				min-width: 150px;
+				border-radius: 5px;
+				text-align: center;
+ 
+			}
+			&:hover span { 
+					display: block; 
+				}
+		}
+ 
+
+}
+ 
+ .option-container .inside {
+	padding: 10px 15px 10px 15px;
+	border-top: solid 1px #cccccc;
+	background-color: #ffffff;
+ 	.option {
+		margin-bottom: 20px;
+	
+		label, .label {
+			float: left;
+			font-weight: bold;
+			padding-left: 3px;
+			width: 15%;
+			cursor: default;	
+		}	
+		.note {
+			float: left;
+			font-weight: normal;
+			font-style: italic;
+			color: #808080;
+		}		
+		 .input {
+			margin-top: 3px;
+		}		
+	}
+}
+ 
+ 
+ .option-design {
+	margin-bottom: 5px;
+}
+ .option-design p.note {
+	font-style: italic;
+	color: #808080;
+	padding-left: 3px;
+	margin-bottom: 10px;
+}
+.option-design .label {
+	float: left;
+	font-weight: bold;
+	padding-left: 3px;
+	padding-top: 3px;
+	width: 160px;
+
+ }
+ 
+ .shortcode-expand { 
+ 	float: right; 
+ 	cursor: pointer;
+
+ }
+
+ .mb-message.shortcode { 
+ 	.expanded {
+ 		display: none;
+ 		.example {
+ 			strong { width: 300px; 
+ 					display: inline-block;
+ 			} 
+ 		
+		}
+ 	}
+ 
+ }
+
+ .manual-box
+ {
+ 	 float: right;
+ 	 margin-bottom: 5px;
+	 border-left: 1px solid $c-border-light; 
+	 height: 100%;
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 width: 15%; 
+
+	 
+	 a { 
+ 		box-sizing: border-box;
+ 		display: inline-block;
+ 		text-align:center;
+	 	font-size: 14px;
+	 	line-height: 13px;
+	 	//margin-left: 20%;
+	 	//padding-top: 12px;
+	 	//position: absolute;
+	 	width: 100%;
+	 	line-height: 36px;
+	 	text-align: center; 
+	 	cursor: pointer;
+	 }
+ }
+  
+ .manual-entry { 
+ 	 display: none;
+ 	
+ 	position: absolute; 
+ 	border: 1px solid $c-border-dark;
+ 	background: rgba(255,255,255,1);
+ 
+ 	width: 45%;
+ 	right: 25px;
+ 	z-index: 199;
+ 	box-sizing: border-box;
+ 	padding-bottom: 20px;
+ 	
+ 	h3 { 
+ 		font-size: 18px;
+ 		width: calc(100%);
+ 		box-sizing: border-box;
+ 		padding: 10px 0;
+ 		border-bottom: 1px solid $c-border-light;
+ 		text-align: center;
+ 		margin: 0;
+ 		padding-right: 35px;
+ 		position: relative;
+ 
+ 		
+ 		span { 
+ 		 	box-sizing: border-box;
+			cursor: pointer;
+ 			width: 35px;
+ 			height: 100%;
+ 			font-size: 25px;
+ 			display: inline-block;
+ 			position: absolute; 
+ 			right: 5px;
+ 			top: 0;
+ 			padding-top: 8px;
+ 		}
+ 	}
+ 	
+ 	h4, p, ol, ul { 
+ 		padding: 0 15px;
+ 	}
+ 	h4 { font-size: 16px; }
+ 	p { font-size: 13px; } 
+ 	
+ 
+}
+
+
+/* Media queries interface */
+.media_query { 
+	width: 28%; 
+	/*margin: 15px 0 15px 165px; */
+	margin: 0 20px 15px 0;
+	border: 1px solid #ccc;
+	padding: 10px 15px;
+	display: inline-block;
+	position: relative;
+	float:left;
+	.removebutton { 
+		position: absolute;
+		right: 10px; 
+		top: 10px; 
+		cursor: pointer;
+		z-index: 100; // prevent label overlap;
+		padding: 10px 5px; // easier click
+
+	 }
+	input:after {
+		clear: both;
+	}
+	.label {
+		clear: both; 
+		margin-bottom: 15px;
+	}	
+	.custom .label, .custom .input {
+		float: left;
+	}
+	.custom.hidden { display: none; } 
+	.description {
+ 		padding: 15px 0px;
+ 		text-align: center;
+ 		min-height: 45px;
+	 }
+	 select { width: 60px; }
+	.input input { 
+		min-height: 22px; 
+		min-width:40px; 
+		margin-top: 0px;
+		height: 28px;
+		padding-top: 2px;
+	} 
+	 
+} // media_query 
+
+.option-container .media_query label { 
+	display: block;
+	font-size:16px;
+	text-align: center;
+		cursor: default;
+}
+ 
+.media_queries_options .new-query { 
+	margin-top: 25px; 
+	select { 
+		width: auto;
+	}
+}
+ 
+	
+ .media_option_prot, #media_desc {
+	display: none;
+}
+
+
+ 
+

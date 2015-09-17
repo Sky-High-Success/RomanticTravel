@@ -1,0 +1,38 @@
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+.accordion .header {
+  font-size: 1.5em;
+  padding: 0.7em 0;
+  text-align: center;
+  color: #555;
+  background: #a2a2a2;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a2a2a2), color-stop(1, #d4d4d4));
+  background: -ms-linear-gradient(bottom, #a2a2a2, #d4d4d4);
+  background: -moz-linear-gradient(center bottom, #a2a2a2 0%, #d4d4d4 100%);
+}
+.accordion .header.opened {
+  color: #000;
+}
+.accordion .header.opened + .content {
+  background-color: #FFE5B1;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.4);
+}
+.accordion .header:not(.opened) {
+  cursor: pointer;
+}
+.accordion .content {
+  display: none;
+  padding: 1em 1.2em;
+}

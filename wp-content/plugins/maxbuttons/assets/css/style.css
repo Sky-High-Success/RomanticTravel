@@ -1,0 +1,374 @@
+/* Modal */
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  display: none; }
+
+.mb_colorpicker {
+  z-index: 200; }
+
+.ads .button-primary {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 210px;
+  text-align: center;
+  overflow: visible; }
+
+#maxbuttons {
+  /* Base element - do not use this in layout since this conflict with other plugins. 
+  
+  */
+  /*.shortcode-container { 
+  	max-width: 60%;
+  	overflow: hidden;
+  } */
+  /* Media queries interface */ }
+  #maxbuttons .message, #maxbuttons .mb-message {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    clear: both; }
+  #maxbuttons .mb-message.error {
+    font-weight: 700; }
+  #maxbuttons .mb-message.shortcode {
+    border: solid 1px #e6db55;
+    background-color: #ffffe0; }
+  #maxbuttons .max-modal {
+    display: none;
+    width: 600px;
+    padding: 10px 20px 20px 20px;
+    display: none;
+    background: #ffffff;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.7); }
+    #maxbuttons .max-modal .modal_header {
+      font-size: 18px;
+      font-weight: 700; }
+    #maxbuttons .max-modal .modal_close {
+      content: X;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      cursor: pointer; }
+  #maxbuttons .max-modal textarea#maxbutton-css {
+    width: 600px;
+    height: 400px;
+    font-family: Consolas, 'Courier New', 'Courier';
+    font-size: 13px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow: none; }
+  #maxbuttons .tablenav .input-paging {
+    width: 55px; }
+  #maxbuttons .ads ul li {
+    margin-bottom: 4px; }
+  #maxbuttons .preview-buttons {
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    overflow: hidden; }
+    #maxbuttons .preview-buttons .heading {
+      width: 100%;
+      clear: both;
+      display: inline-block;
+      border-bottom: 1px solid #dfdfdf; }
+      #maxbuttons .preview-buttons .heading > span {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 14px;
+        float: left; }
+    #maxbuttons .preview-buttons .button-row {
+      width: 100%;
+      clear: both;
+      display: inline-block;
+      border-bottom: 1px solid #dfdfdf; }
+      #maxbuttons .preview-buttons .button-row > span {
+        display: inline-block;
+        font-size: 13px;
+        float: left; }
+      #maxbuttons .preview-buttons .button-row .actions {
+        margin: 10px 15px;
+        display: inline-block; }
+    #maxbuttons .preview-buttons .mb-container {
+      margin: 0;
+      float: none !important; }
+    #maxbuttons .preview-buttons .mb-center {
+      text-align: left !important; }
+    #maxbuttons .preview-buttons .mb-center .mb-text {
+      text-align: center !important; }
+    #maxbuttons .preview-buttons .col {
+      padding: 10px 0 10px 1%; }
+    #maxbuttons .preview-buttons .col_check {
+      width: 20px; }
+    #maxbuttons .preview-buttons .col_button {
+      width: 60%;
+      overflow: hidden; }
+    #maxbuttons .preview-buttons .col_name {
+      width: 15%; }
+    #maxbuttons .preview-buttons .col_shortcode {
+      width: 15%;
+      padding-right: 0; }
+  #maxbuttons .main {
+    max-width: 72%;
+    position: relative;
+    z-index: 500; }
+  #maxbuttons .pagination {
+    width: 100%;
+    display: inline-block;
+    margin: 15px 0 5px; }
+    #maxbuttons .pagination li {
+      float: left;
+      margin-right: 5px; }
+      #maxbuttons .pagination li a, #maxbuttons .pagination li span {
+        background: #ccc;
+        vertical-align: middle;
+        padding: 4px 10px 8px;
+        height: 15px;
+        display: inline-block;
+        border: 1px solid #eee;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold; }
+  #maxbuttons .input .input_url {
+    width: 600px; }
+  #maxbuttons .option-container {
+    margin-bottom: 20px;
+    border: solid 1px #cccccc;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    background-color: #fff; }
+    #maxbuttons .option-container .title {
+      font-size: 18px;
+      padding: 9px 8px 9px 10px;
+      text-align: left;
+      text-shadow: 0px 1px 0px #ffffff;
+      position: relative; }
+    #maxbuttons .option-container .section-title {
+      padding: 15px;
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: 16px; }
+    #maxbuttons .option-container .section-title {
+      background-color: #fff; }
+    #maxbuttons .option-container .option label {
+      display: inline-block;
+      width: 150px;
+      font-weight: 700; }
+    #maxbuttons .option-container .help {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      font-size: 18px;
+      margin-left: 10px; }
+      #maxbuttons .option-container .help span {
+        font-family: "Open Sans";
+        font-size: 13px;
+        background-color: #808080;
+        color: #fff;
+        position: absolute;
+        display: none;
+        padding: 10px 5px;
+        top: -7px;
+        left: 25px;
+        min-width: 150px;
+        border-radius: 5px;
+        text-align: center; }
+      #maxbuttons .option-container .help:hover span {
+        display: block; }
+  #maxbuttons .option-container .inside {
+    padding: 10px 15px 10px 15px;
+    border-top: solid 1px #cccccc;
+    background-color: #ffffff; }
+    #maxbuttons .option-container .inside .option {
+      margin-bottom: 20px; }
+      #maxbuttons .option-container .inside .option label, #maxbuttons .option-container .inside .option .label {
+        float: left;
+        font-weight: bold;
+        padding-left: 3px;
+        width: 15%;
+        cursor: default; }
+      #maxbuttons .option-container .inside .option .note {
+        float: left;
+        font-weight: normal;
+        font-style: italic;
+        color: #808080; }
+      #maxbuttons .option-container .inside .option .input {
+        margin-top: 3px; }
+  #maxbuttons .option-design {
+    margin-bottom: 5px; }
+  #maxbuttons .option-design p.note {
+    font-style: italic;
+    color: #808080;
+    padding-left: 3px;
+    margin-bottom: 10px; }
+  #maxbuttons .option-design .label {
+    float: left;
+    font-weight: bold;
+    padding-left: 3px;
+    padding-top: 3px;
+    width: 160px; }
+  #maxbuttons .shortcode-expand {
+    float: right;
+    cursor: pointer; }
+  #maxbuttons .mb-message.shortcode .expanded {
+    display: none; }
+    #maxbuttons .mb-message.shortcode .expanded .example strong {
+      width: 300px;
+      display: inline-block; }
+  #maxbuttons .manual-box {
+    float: right;
+    margin-bottom: 5px;
+    border-left: 1px solid #ccc;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15%; }
+    #maxbuttons .manual-box a {
+      box-sizing: border-box;
+      display: inline-block;
+      text-align: center;
+      font-size: 14px;
+      line-height: 13px;
+      width: 100%;
+      line-height: 36px;
+      text-align: center;
+      cursor: pointer; }
+  #maxbuttons .manual-entry {
+    display: none;
+    position: absolute;
+    border: 1px solid #000;
+    background: white;
+    width: 45%;
+    right: 25px;
+    z-index: 199;
+    box-sizing: border-box;
+    padding-bottom: 20px; }
+    #maxbuttons .manual-entry h3 {
+      font-size: 18px;
+      width: calc(100%);
+      box-sizing: border-box;
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      margin: 0;
+      padding-right: 35px;
+      position: relative; }
+      #maxbuttons .manual-entry h3 span {
+        box-sizing: border-box;
+        cursor: pointer;
+        width: 35px;
+        height: 100%;
+        font-size: 25px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 0;
+        padding-top: 8px; }
+    #maxbuttons .manual-entry h4, #maxbuttons .manual-entry p, #maxbuttons .manual-entry ol, #maxbuttons .manual-entry ul {
+      padding: 0 15px; }
+    #maxbuttons .manual-entry h4 {
+      font-size: 16px; }
+    #maxbuttons .manual-entry p {
+      font-size: 13px; }
+  #maxbuttons .media_query {
+    width: 28%;
+    /*margin: 15px 0 15px 165px; */
+    margin: 0 20px 15px 0;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    display: inline-block;
+    position: relative;
+    float: left; }
+    #maxbuttons .media_query .removebutton {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+      z-index: 100;
+      padding: 10px 5px; }
+    #maxbuttons .media_query input:after {
+      clear: both; }
+    #maxbuttons .media_query .label {
+      clear: both;
+      margin-bottom: 15px; }
+    #maxbuttons .media_query .custom .label, #maxbuttons .media_query .custom .input {
+      float: left; }
+    #maxbuttons .media_query .custom.hidden {
+      display: none; }
+    #maxbuttons .media_query .description {
+      padding: 15px 0px;
+      text-align: center;
+      min-height: 45px; }
+    #maxbuttons .media_query select {
+      width: 60px; }
+    #maxbuttons .media_query .input input {
+      min-height: 22px;
+      min-width: 40px;
+      margin-top: 0px;
+      height: 28px;
+      padding-top: 2px; }
+  #maxbuttons .option-container .media_query label {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    cursor: default; }
+  #maxbuttons .media_queries_options .new-query {
+    margin-top: 25px; }
+    #maxbuttons .media_queries_options .new-query select {
+      width: auto; }
+  #maxbuttons .media_option_prot, #maxbuttons #media_desc {
+    display: none; }
+  #maxbuttons .system_info {
+    width: 90%;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 15px; }
+    #maxbuttons .system_info .info {
+      margin: 5px 0; }
+      #maxbuttons .system_info .info label {
+        width: 250px;
+        display: inline-block;
+        clear: both; }
+
+/* .media_button_table .media_row
+{
+
+	.mb-container { margin: 0 !important;  } 
+	.mb-center { text-align: left !important; } // default
+	.mb-center .mb-text { text-align: center !important; } 
+
+
+
+} */
+#mb_media_buttons {
+  width: 100%; }
+  #mb_media_buttons #maxbuttons {
+    margin: 0; }
+    #mb_media_buttons #maxbuttons .preview-buttons {
+      border: 0;
+      width: 100%;
+      clear: both; }
+    #mb_media_buttons #maxbuttons .col_insert {
+      width: 20%; }
+  #mb_media_buttons .pagination {
+    width: 100%;
+    margin: 10px 0;
+    min-height: 20px; }
+    #mb_media_buttons .pagination span {
+      font-size: 15px;
+      font-weight: 700;
+      float: left;
+      cursor: pointer; }
+    #mb_media_buttons .pagination .next {
+      float: right; }

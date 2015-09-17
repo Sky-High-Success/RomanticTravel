@@ -1,0 +1,82 @@
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+.ss-upgrade-button-style {
+  background-color: #e13f09;
+  background-image: linear-gradient(to bottom, #f5490f, #e13f09);
+  border-color: #e13f09 #e13f09 #c93808;
+  box-shadow: 0 1px 0 rgba(222, 141, 115, 0.5) inset;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.ss-upgrade-button-style:hover,
+.ss-upgrade-button-style:focus {
+  background-color: #f0430a;
+  background-image: linear-gradient(to bottom, #f54c14, #e13f09);
+  border-color: #bf3608;
+  box-shadow: 0 1px 0 rgba(222, 141, 115, 0.4) inset;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+#ss-campaigns-form {
+  width: 580px;
+}
+#ss-campaigns-form .campaigns th {
+  font-size: 16px;
+}
+#ss-campaigns-form .campaigns th.column-active > a {
+  padding-left: 50px;
+}
+#ss-campaigns-form .campaigns td {
+  font-size: 14px;
+}
+#ss-campaigns-form .campaigns .check-column {
+  width: 30px;
+}
+#ss-campaigns-form .campaigns .column-active {
+  width: 150px;
+  text-align: center;
+}
+#ss-campaigns-form .campaigns .column-active .ss-upgrade-button {
+  position: relative;
+  top: 8px;
+  background-color: #e13f09;
+  background-image: linear-gradient(to bottom, #f5490f, #e13f09);
+  border-color: #e13f09 #e13f09 #c93808;
+  box-shadow: 0 1px 0 rgba(222, 141, 115, 0.5) inset;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+#ss-campaigns-form .campaigns .column-active .ss-upgrade-button:hover,
+#ss-campaigns-form .campaigns .column-active .ss-upgrade-button:focus {
+  background-color: #f0430a;
+  background-image: linear-gradient(to bottom, #f54c14, #e13f09);
+  border-color: #bf3608;
+  box-shadow: 0 1px 0 rgba(222, 141, 115, 0.4) inset;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+#ss-campaigns-form .campaigns .column-name {
+  width: 400px;
+}
+#ss-campaigns-form .campaigns tbody .check-column input {
+  margin-top: 7px;
+}
+#ss-campaigns-form .campaigns tbody .column-active .ss-toggle-on,
+#ss-campaigns-form .campaigns tbody .column-active .ss-toggle-off {
+  margin: 5px auto 0;
+}
+#ss-campaigns-form .campaigns tbody .column-name {
+  padding-top: 10px;
+}

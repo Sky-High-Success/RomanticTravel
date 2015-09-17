@@ -1,0 +1,221 @@
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+.ss-upgrade-button-style {
+  background-color: #e13f09;
+  background-image: linear-gradient(to bottom, #f5490f, #e13f09);
+  border-color: #e13f09 #e13f09 #c93808;
+  box-shadow: 0 1px 0 rgba(222, 141, 115, 0.5) inset;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.ss-upgrade-button-style:hover,
+.ss-upgrade-button-style:focus {
+  background-color: #f0430a;
+  background-image: linear-gradient(to bottom, #f54c14, #e13f09);
+  border-color: #bf3608;
+  box-shadow: 0 1px 0 rgba(222, 141, 115, 0.4) inset;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+#titlediv .ss-campaign-status-wrapper {
+  margin-bottom: 1em;
+  font-size: 1.7em;
+}
+#titlediv .ss-campaign-status-wrapper .ss-upgrade-button {
+  position: relative;
+  top: -3px;
+  background-color: #e13f09;
+  background-image: linear-gradient(to bottom, #f5490f, #e13f09);
+  border-color: #e13f09 #e13f09 #c93808;
+  box-shadow: 0 1px 0 rgba(222, 141, 115, 0.5) inset;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+#titlediv .ss-campaign-status-wrapper .ss-upgrade-button:hover,
+#titlediv .ss-campaign-status-wrapper .ss-upgrade-button:focus {
+  background-color: #f0430a;
+  background-image: linear-gradient(to bottom, #f54c14, #e13f09);
+  border-color: #bf3608;
+  box-shadow: 0 1px 0 rgba(222, 141, 115, 0.4) inset;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+#titlediv .ss-campaign-status-wrapper .ss-inactive-campaign-message {
+  color: #f00;
+}
+#titlediv .ss-campaign-status-wrapper .ss-toggle-on,
+#titlediv .ss-campaign-status-wrapper .ss-toggle-off {
+  display: inline-block;
+  position: relative;
+  left: 15px;
+  top: 7px;
+}
+#titlediv .ss-campaign-name-wrapper {
+  display: inline-block;
+  font-size: 1.7em;
+}
+#titlediv .ss-campaign-name-wrapper #titlewrap {
+  display: inline-block;
+}
+#titlediv .ss-campaign-name-wrapper #titlewrap #title-prompt-text {
+  font-size: 1em;
+}
+#titlediv .ss-campaign-name-wrapper #titlewrap #title {
+  width: 713px;
+  font-size: 1em;
+}
+#titlediv .button {
+  margin-left: 10px;
+  font-size: 1.7em;
+}
+.ss-no-pages-in-campaign-note {
+  font-size: 1.7em;
+  color: red;
+}
+.ss-campaign-content {
+  float: right;
+  margin-left: -100%;
+  width: 100%;
+}
+.ss-campaign-content > div.inside {
+  margin-left: 300px;
+  height: 400px;
+}
+.ss-campaign-entity {
+  clear: left;
+  width: 100%;
+}
+.ss-campaign-entity .postbox h3 {
+  cursor: default;
+}
+.ss-campaign-entity .ss-campaign-entity-item {
+  width: 285px;
+  float: left;
+}
+.ss-campaign-entity .ss-campaign-entity-item h3 > span {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: 60px;
+  line-height: 1.2em;
+}
+.ss-campaign-entity .ss-campaign-entity-item h3 > span .postbox-title-action {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 11px;
+  color: #999;
+}
+.ss-campaign-entity .ss-campaign-entity-item .inside {
+  padding-top: 130px;
+  text-align: center;
+  background: url('../../images/page-types/page.png') no-repeat center top;
+}
+.ss-campaign-entity .ss-campaign-entity-item .inside .ss-draft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 130px;
+  background: url('../../images/page-types/draft.png') no-repeat center top;
+}
+.ss-campaign-entity .ss-campaign-entity-item .ss-type-signup {
+  background-image: url('../../images/page-types/page-signup.png');
+}
+.ss-campaign-entity .ss-campaign-entity-item .ss-type-offer {
+  background-image: url('../../images/page-types/page-offer.png');
+}
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options {
+  border-top: 1px solid #dfdfdf;
+  margin: 0;
+  padding: 2px;
+  background: #dfdfdf;
+}
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin: 0;
+  padding: 0;
+}
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li > a {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #dfdfdf;
+}
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li > a > span {
+  display: block;
+  background-image: url('../../images/page-meta-box-icons.png');
+  background-repeat: no-repeat;
+  background-position: 4px 4px;
+  border: 1px solid #dfdfdf;
+  padding-left: 32px;
+  width: 0;
+  height: 32px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li > a.active {
+  background: #f3f3f3;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f4f4f4), color-stop(1, #fefefe));
+  background: -ms-linear-gradient(bottom, #f4f4f4, #fefefe);
+  background: -moz-linear-gradient(center bottom, #f4f4f4 0%, #fefefe 100%);
+  border-color: #999;
+}
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li > a:hover,
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li > a.active:hover {
+  background: #fefefe;
+  border-color: #ccc;
+}
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li > a:hover > span,
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li > a.active:hover > span {
+  background-color: white;
+}
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li.ss-page-lock > a > span {
+  background-position: 4px -428px;
+}
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li.ss-page-lock > a.active > span {
+  background-position: 4px -380px;
+}
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li.ss-page-timer > a > span {
+  background-position: 4px -44px;
+}
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li.ss-page-timer > a.active > span {
+  background-position: 4px 4px;
+}
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li.ss-page-banners > a > span {
+  background-position: 4px -236px;
+}
+.ss-campaign-entity .ss-campaign-entity-item ul.ss-page-options li.ss-page-banners > a.active > span {
+  background-position: 4px -188px;
+}
+.ss-campaign-entity .ss-campaign-entity-metabox {
+  margin-left: 300px;
+  display: none;
+}

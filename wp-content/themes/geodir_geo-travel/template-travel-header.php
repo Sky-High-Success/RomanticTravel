@@ -172,7 +172,7 @@ if(isset($_POST['submit']) && isset($_POST['package']) && isset($_POST['post_non
 	$multiple_to_recipients = array(
 			'enquiries@honeymoon.com.au',
 			'deals@romantictravel.com.au',
-			'chengxianga2008@yahoo.com'
+			
 	);
 
 	$content_here = <<<DOC
@@ -327,7 +327,8 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
 			<div class="rightheader">
 				<div class="newAddtionalButtons">
 					<a href="javascript:;" class="CustmHedaerBtns">Get a Quote</a>
-					<a href="#" class="enquiry_anchor CustmHedaerBtns" data-toggle="modal" data-target="#enquiryModal" data-package_quote="general">Online Enquiry</a>
+					<a href="#" class="hidden-xs enquiry_anchor CustmHedaerBtns" data-toggle="modal" data-target="#enquiryModal" data-package_quote="general">Online Enquiry</a>
+					<a href="<?php echo get_home_url(null,"package-enquiry"); ?>" class="visible-xs-inline-block enquiry_anchor CustmHedaerBtns" data-package_quote="general">Online Enquiry</a>
 				</div>
 				<div class="EnquiryWidgetText">
 					<?php dynamic_sidebar('Header Right'); ?>

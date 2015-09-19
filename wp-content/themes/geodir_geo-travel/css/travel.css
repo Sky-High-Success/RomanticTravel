@@ -326,7 +326,7 @@ section#locations .location a:hover, section#locations .location a:hover i, .ad-
 .contactModal {
 
 	z-index: -10;
- 	margin-top: 100px; 
+ 	margin-top: 50px; 
 }
 
 .modal-dialog {

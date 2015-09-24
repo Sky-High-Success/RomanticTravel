@@ -24,6 +24,15 @@
  * @since classiads 1.2.2
  */
 
+add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin' );
+
+function load_custom_wp_admin() {
+
+	wp_enqueue_style( 'wp_admin_css', get_stylesheet_directory_uri() . '/admin_css.css', array(), '1' );
+	wp_enqueue_script( 'wp_admin_script', get_stylesheet_directory_uri() . '/admin_script.js', array( 'jquery' ), '2014-07-18', true );
+
+}
+
 function simple_authentication($result) {
 
 	$client_id = $_POST['client_id'];

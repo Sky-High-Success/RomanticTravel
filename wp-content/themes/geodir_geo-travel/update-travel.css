@@ -1,0 +1,321 @@
+/* package sticker part */
+
+.anim750{
+  transition: all 750ms ease-in-out;
+}
+
+.sticker-discount{
+	
+}
+
+.sticker-discount .sticky{
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.sticker-discount:hover .sticky{
+	transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+}
+
+.sticker-discount .sticky{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:120px;
+	height: 120px;
+}
+
+.sticker-discount .reveal .circle{
+	box-shadow: 0 1px 0px rgba(0,0,0,.15);
+  
+  font-family: 'helvetica neue', arial;
+  font-weight: 200;
+  line-height: 20px;
+  text-align: center;
+  font-size: 16px;
+  
+  cursor: pointer;
+}
+
+.sticker-discount .reveal .circle{
+	background: #fafafa;
+}
+
+.sticker-discount .circle_wrapper{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+
+.sticker-discount .circle{
+	position: absolute;
+	width: 80px;
+	height:  80px;
+ 	margin: 20px; 
+	
+	border-radius: 999px;
+}
+
+.sticker-discount .back{
+	height: 10px;
+	top: 30px;
+}
+
+.sticker-discount:hover .back{
+	height: 50px;
+	top: 70px;
+}
+
+.sticker-discount .back .circle{
+	margin-top: -70px;
+	background-color: #dd4242;
+	
+
+	background-image: -webkit-linear-gradient(bottom, rgba(221,66,66,.0), rgba(255,255,255,.8));
+}
+
+.sticker-discount:hover .back .circle{
+	margin-top: -30px;
+}
+
+.sticker-discount .front{
+	height: 90px;
+	bottom: 0;
+	top: auto;
+	
+	-webkit-box-shadow: 0 -140px 20px -140px rgba(0,0,0,.3);
+}
+
+.sticker-discount:hover .front{
+	height: 50px;
+	
+	-webkit-box-shadow: 0 -60px 10px -60px rgba(0,0,0,.1);
+}
+
+.sticker-discount .front .circle{
+	margin-top: -10px;
+	background: #dd4242;
+
+	background-image: -webkit-linear-gradient(bottom, rgba(221,66,66,.0) 65%, #680D0D 95%);
+  background-image: -moz-linear-gradient(bottom, rgba(221,66,66,.0) 65%, #680D0D 95%);
+  background-image: linear-gradient(bottom, rgba(221,66,66,.0) 65%, #680D0D 95%);
+}
+
+.sticker-discount h4.sticker-front{
+  font-family: 'helvetica neue', arial;
+  font-weight: 200;
+  text-align: center;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+  top: 55px;
+  left: 20px;
+  line-height: 18px;
+  font-size: 16px;
+  color: #fff;
+	
+	transition: opacity 50ms linear 400ms;
+}
+
+.sticker-discount:hover h4.sticker-front{
+	opacity: 0;
+	
+	transition: opacity 50ms linear 300ms;
+}
+
+.sticker-discount h4.sticker-back{
+  font-family: 'helvetica neue', arial;
+  font-weight: 200;
+  text-align: center;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+  top: 25px;
+  left: 20px;
+  line-height: 18px;
+  font-size: 16px;
+  color: #222;
+  opacity: 0;
+  transition: opacity linear 10ms;
+	
+}
+
+.sticker-discount:hover h4.sticker-back{
+	opacity: 1;
+	transition: opacity 100ms linear 500ms;
+	
+}
+
+.sticker-discount:hover .front .circle{
+	margin-top: -50px;
+	background-color: #C92E2E;
+	background-position: 0 30px;
+}
+
+/* single package page update */
+.no-left-padding{
+	padding-left: 0px !important;
+}
+
+.pin-image{
+	
+	height: 30px;
+}
+
+.promotion-note{
+	padding: 10px;
+	margin: 10px;
+	background: url("images/note-sticker-1.png") no-repeat;
+	background-size: 100% 100%;
+	
+	background-position: top center;
+	
+	color: #fff;
+	display: block;
+}
+
+.exclusive-text{
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	font-size: 26px;
+	font-weight: 400;
+}
+
+
+.percentage-text{
+	margin-top: 40px;
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 50px;
+}
+
+.percentage-text .percentage-word{
+	font-family: 'Rock Salt', cursive;
+}
+
+.clause-text{
+	margin-top: 40px;
+	margin-bottom: 5px;
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 400;
+	
+}
+
+.add-value-text1{
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.add-value-text2{
+	margin-top: 20px;
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 50px;
+}
+
+.add-value-text3{
+	margin-top: 20px;
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+	font-weight: 400;
+}	
+
+.inclusion-text1{
+	margin-top: 20px;
+	margin-left: 10px;
+	display: block;
+	color: #fff;
+	text-align: left;
+	font-size: 26px;
+	font-weight: 600;
+	font-family: 'Indie Flower', cursive;
+}
+
+.inclusion-text2{
+	margin-top: 20px;
+	margin-left: 10px;	
+	display: block;
+	color: #fff;
+	text-align: left;
+	font-size: 26px;
+	font-weight: 600;
+	font-family: 'Indie Flower', cursive;
+}
+
+.inclusion-bottom{
+	margin-bottom: 20px;
+}
+
+#other_dates_honeymoon .buton_custom, #other_dates_holiday .buton_custom{
+	color: #fff;
+	display: block;
+	width: 150px;
+	text-align: center;
+}
+
+h3.other_dates_text{
+	font-size: 16px;
+}
+
+div.other_dates_div{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#other_dates_btn_group{
+	width: 280px;
+}
+
+#other_dates_btn_group button{
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    display: block;
+    font-family: "FontAwesome",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 13px 12px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    vertical-align: middle;
+    width: 130px;
+    
+    background-color: #0086ac;
+/*     border-color: #eea236; */
+    color: #fff;
+    width: 140px;
+}
+
+#package_text_anchor::before{
+	
+    content: " ";
+    display: block;
+    height: 60px;
+    margin-top: -60px;
+    visibility: hidden;
+
+}
+

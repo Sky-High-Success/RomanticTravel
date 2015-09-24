@@ -1,0 +1,20 @@
+/* travel admin */
+
+.travel_admin_checkbox{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.travel_admin_label{
+	margin-right: 10px;
+}
+
+.travel_admin_inclusion_label{
+	margin-bottom: 10px;
+}
+
+.travel_admin_checkbox #list_package_other_travel_dates_holiday, .travel_admin_checkbox #list_package_other_travel_dates_honeymoon{
+	font-weight: 400;
+}

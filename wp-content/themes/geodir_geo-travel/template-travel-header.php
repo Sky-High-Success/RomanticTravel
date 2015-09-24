@@ -23,6 +23,8 @@
 	//Template
 	wp_enqueue_style( 'travel-style', get_stylesheet_directory_uri() . '/css/travel.css', array(), '1.0.0' );
 	
+	wp_enqueue_style( 'update-travel-style', get_stylesheet_directory_uri() . '/update-travel.css', array(), '1.0.0' );
+	
 	wp_enqueue_style( 'datepicker-style', get_stylesheet_directory_uri() . '/css/datepicker3.css', array(), '1.0.0' );
 	
 	wp_enqueue_style( 'fontawesome-style', get_stylesheet_directory_uri() . '/css/font-awesome.min.css', array(), '1.0.0' );

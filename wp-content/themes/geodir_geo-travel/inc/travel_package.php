@@ -355,10 +355,10 @@ function list_package_other_travel_dates_content( $post ) {
 add_action( 'save_post', 'list_package_other_travel_dates_save' );
 function list_package_other_travel_dates_save( $post_id ) {
 
-	if ( ! isset( $_POST['travel_package_meta_box_nonce6'] ) ) {
+	if ( ! isset( $_POST['travel_package_meta_box_nonce8'] ) ) {
 		return;
 	}
-	if ( ! wp_verify_nonce( $_POST['travel_package_meta_box_nonce6'], 'travel_package_meta_box6' ) ) {
+	if ( ! wp_verify_nonce( $_POST['travel_package_meta_box_nonce8'], 'travel_package_meta_box8' ) ) {
 		return;
 	}
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
@@ -373,6 +373,64 @@ function list_package_other_travel_dates_save( $post_id ) {
 	if(isset($_POST["list_package_other_travel_dates_holiday"])){
 		$list_package_other_travel_dates_holiday = $_POST['list_package_other_travel_dates_holiday'];
 		update_post_meta($post_id, 'list_package_other_travel_dates_holiday', $list_package_other_travel_dates_holiday);
+	}
+}
+
+// Package Other Travel Dates Romantic Travel Only box
+add_action( 'add_meta_boxes', 'list_package_other_travel_dates_romantic_only' );
+function list_package_other_travel_dates_romantic_only() {
+	add_meta_box(
+	'list_package9_other_travel_dates_romantic_only',
+	__( 'For Other Travel Dates (RomanticTravel Only)', 'myplugin_textdomain' ),
+	'list_package_other_travel_dates_romantic_only_content',
+	'travel_package',
+	'normal',
+	'high'
+			);
+
+}
+
+function list_package_other_travel_dates_romantic_only_content( $post ) {
+
+	wp_nonce_field( 'travel_package_meta_box9', 'travel_package_meta_box_nonce9' );
+
+	$list_package_other_travel_dates_honeymoon = get_post_meta($post->ID, 'list_package_other_travel_dates_romantic_only_honeymoon', true);
+	$list_package_other_travel_dates_holiday = get_post_meta($post->ID, 'list_package_other_travel_dates_romantic_only_holiday', true);
+
+	echo '<div class="travel_admin_checkbox" ><label class="travel_admin_label" for="list_package_notes_added_value">Honeymoon: </label>';
+	echo '<input type="text" id="list_package_other_travel_dates_romantic_only_honeymoon" name="list_package_other_travel_dates_romantic_only_honeymoon" size="50" placeholder="Enter URL of Honeymoon Travel Button (Romantic Only)" value="';
+	echo $list_package_other_travel_dates_honeymoon;
+	echo '"></div>';
+
+	echo '<div class="travel_admin_checkbox" ><label class="travel_admin_label" for="list_package_notes_added_value">Holiday: </label>';
+	echo '<input type="text" id="list_package_other_travel_dates_romantic_only_holiday" name="list_package_other_travel_dates_romantic_only_holiday" size="50" placeholder="Enter URL of Holiday Travel Button (Romantic Only)" value="';
+	echo $list_package_other_travel_dates_holiday;
+	echo '"></div>';
+
+
+}
+
+add_action( 'save_post', 'list_package_other_travel_dates_romantic_only_save' );
+function list_package_other_travel_dates_romantic_only_save( $post_id ) {
+
+	if ( ! isset( $_POST['travel_package_meta_box_nonce9'] ) ) {
+		return;
+	}
+	if ( ! wp_verify_nonce( $_POST['travel_package_meta_box_nonce9'], 'travel_package_meta_box9' ) ) {
+		return;
+	}
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+
+	if(isset($_POST["list_package_other_travel_dates_romantic_only_honeymoon"])){
+		$list_package_other_travel_dates_honeymoon = $_POST['list_package_other_travel_dates_romantic_only_honeymoon'];
+		update_post_meta($post_id, 'list_package_other_travel_dates_romantic_only_honeymoon', $list_package_other_travel_dates_honeymoon);
+	}
+
+	if(isset($_POST["list_package_other_travel_dates_romantic_only_holiday"])){
+		$list_package_other_travel_dates_holiday = $_POST['list_package_other_travel_dates_romantic_only_holiday'];
+		update_post_meta($post_id, 'list_package_other_travel_dates_romantic_only_holiday', $list_package_other_travel_dates_holiday);
 	}
 }
 

@@ -41,6 +41,11 @@
 
 		//error_log("bb".$package_information['package_cover_photo_url']);
 		
+		$list_package_notes = get_post_meta($post->ID, 'list_package_notes', true);
+		
+		$list_package_notes_added_value = get_post_meta($post->ID, 'list_package_notes_added_value', true);
+		
+		$list_package_notes_exclusive_sale = get_post_meta($post->ID, 'list_package_notes_exclusive_sale', true);
 		
 
 ?>
@@ -58,13 +63,57 @@
       <p class="text-p"><?php echo $package_information['package_excerpt'];?></p>
       <a href="<?php echo $package_information['package_url'];?>">more info...</a>
     </div>
+
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
       <div class="icontravel icon-headphones">
       
-        <div class="sticker-discount" style="background-image: url('<?php echo get_stylesheet_directory_uri().'/images/sticker-discount-80.png'; ?>')">
-          <span class="sticker-discount-span"><?php echo empty($package_information['package_discount'])?"5%":$package_information['package_discount'];?></span>
-          <span class="sticker-discount-span-off">OFF</span>
-        </div>
+      		<?php if($list_package_notes == "exclusive_sale" || $list_package_notes == "added_value" ){
+      		?>
+        	<div class="sticker-discount anim750">
+	
+ 				 <div class="reveal circle_wrapper">
+					<div class="circle"></div>
+			   	 </div>
+						
+				 <div class="sticky anim750">
+					<div class="front circle_wrapper anim750">
+						<div class="circle anim750"></div>
+	  				</div>
+				 </div>
+	
+  				<h4 class="sticker-front">
+  				<?php 
+  				if($list_package_notes == "exclusive_sale"){
+  					echo "Exclusive Sale";
+  				}
+  				
+  				if($list_package_notes == "added_value"){
+  					echo "Added Value";
+  				}
+  				?>
+  				</h4>
+						
+  				<div class="sticky anim750">
+					<div class="back circle_wrapper anim750">
+						<div class="circle anim750"> </div>
+					</div>
+				</div>
+				
+				<h4 class="sticker-back">
+  				<?php 
+  				if($list_package_notes == "exclusive_sale"){
+  					echo "Save <br>".$list_package_notes_exclusive_sale."%";
+  				}
+  				
+  				if($list_package_notes == "added_value"){	
+  					echo "Over $".$list_package_notes_added_value;
+  				}
+  				?>
+  				</h4>
+						
+			</div>
+			<?php }
+			?>
                
         <a href="<?php echo $package_information['package_url'];?>">
           <img src="<?php echo  get_site_url(null, $package_information['package_cover_photo_url']);?>" alt="" />

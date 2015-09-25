@@ -105,7 +105,6 @@ section#locations .location a:hover, section#locations .location a:hover i, .ad-
 }
 
 
-
 .travel-style .header-p{
 	font-family: Arial,Helvetica,sans-serif;
 }
@@ -119,7 +118,7 @@ section#locations .location a:hover, section#locations .location a:hover i, .ad-
 }
 
 .travel-style .book-now{
-	width: 120px;
+	width: 190px;
 	display: inline-block;
 	background-color: #fff;
 	color: #fd4158 !important;
@@ -141,7 +140,7 @@ section#locations .location a:hover, section#locations .location a:hover i, .ad-
 
 .travel-style .travel-h3{
 	margin-bottom: -20px;
-	margin-top: 40px;
+/* 	margin-top: 40px; */
 }
 
 .sectiontravel{
@@ -741,12 +740,14 @@ div.box-notification a:hover {
 }
 
 .sticker-discount{
+backface-visibility: hidden;
+	
 	position: absolute;
 	font-size: 22px;   
-    top: -25px;
+    top: -57px;
     height: 80px;
     width: 80px;
-    left: -25px;
+    left: -35px;
 	
 }
 
@@ -823,21 +824,13 @@ div.box-notification a:hover {
     }
 }
 
-
-@media (max-width: 430px) {
+@media (max-width: 600px) {
 	.sticker-discount{
-	  left: -10px;
+	  left: auto;
+	  right: 40px;
 	}
 	
 } 
-
-@media (max-width: 400px) {
-	.sticker-discount{
-	  left: 0px;
-	}
-	
-	
-}
 
 @media (max-width: 380px) {
 	.icontravel img{
@@ -863,6 +856,11 @@ div.box-notification a:hover {
 	border: 1px solid #eee !important;
 }
 
+.banner-fixed-offset{
+	margin-top: 61px;
+}
+
+
 .datepicker table tbody{
 	border-bottom: medium none;
 }
@@ -873,5 +871,23 @@ div.box-notification a:hover {
 
 .CustmHedaerBtns{
 	text-decoration: none !important;
+}
+
+.sticker-discount h4{
+	margin-top: 1px;
+	margin-bottom: 5px;
+}
+
+.in-sec .enquiry_anchor img{
+	max-width: inherit;
+}
+
+a.buton_custom {
+    background: #d4131b none repeat scroll 0 0;
+    font-family: arial;
+    font-size: 16px !important;
+    margin-right: 5%;
+    padding: 14px 30px;
+    text-decoration: none;
 }
 

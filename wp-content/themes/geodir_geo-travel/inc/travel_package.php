@@ -88,58 +88,12 @@ function list_package_pricing_save( $post_id ) {
 	}
 }
 
-// Package Discount box
-add_action( 'add_meta_boxes', 'list_package_discount' );
-function list_package_discount() {
-
-	add_meta_box(
-	'list_package2_discount',
-	__( 'Package Discount', 'myplugin_textdomain' ),
-	'list_package_discount_content',
-	'travel_package',
-	'normal',
-	'high'
-			);
-
-}
-
-function list_package_discount_content( $post ) {
-
-	wp_nonce_field( 'travel_package_meta_box21', 'travel_package_meta_box_nonce21' );
-	$list_package_discount = get_post_meta($post->ID, 'package_discount', true);
-
-	echo '<label for="list_package_discount"></label>';
-	echo '<input type="text" id="list_package_discount" name="list_package_discount" size="100" placeholder="Enter package discount in percentage here" value="';
-	echo $list_package_discount;
-	echo '">';
-
-}
-
-add_action( 'save_post', 'list_package_discount_save' );
-function list_package_discount_save( $post_id ) {
-
-	if ( ! isset( $_POST['travel_package_meta_box_nonce21'] ) ) {
-		return;
-	}
-	if ( ! wp_verify_nonce( $_POST['travel_package_meta_box_nonce21'], 'travel_package_meta_box21' ) ) {
-		return;
-	}
-	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
-		return;
-	}
-
-	if(isset($_POST["list_package_discount"])){
-		$list_package_discount = $_POST['list_package_discount'];
-		update_post_meta($post_id, 'package_discount', $list_package_discount);
-	}
-}
-
 // Package Excerpt box
 add_action( 'add_meta_boxes', 'list_package_excerpt' );
 function list_package_excerpt() {
 	add_meta_box(
 	'list_package2_excerpt',
-	__( 'Package Excerpt', 'myplugin_textdomain' ),
+	__( 'Package Description', 'myplugin_textdomain' ),
 	'list_package_excerpt_content',
 	'travel_package',
 	'normal',
@@ -154,7 +108,7 @@ function list_package_excerpt_content( $post ) {
 	$list_package_excerpt = get_post_meta($post->ID, 'package_excerpt', true);
 
 	echo '<label for="list_package_excerpt"></label>';
-	echo '<textarea id="list_package_excerpt" name="list_package_excerpt" rows="10" cols="100" placeholder="Enter package excerpt here" >';
+	echo '<textarea id="list_package_excerpt" name="list_package_excerpt" rows="10" cols="100" placeholder="Enter package description here" >';
 	echo $list_package_excerpt;
 	echo '</textarea>';
 
@@ -361,3 +315,174 @@ function list_package_detail_validity_save( $post_id ) {
 		update_post_meta($post_id, 'package_detail_validity', $list_package_detail_validity);
 	}
 }
+
+
+
+// Package Other Travel Dates box
+add_action( 'add_meta_boxes', 'list_package_other_travel_dates' );
+function list_package_other_travel_dates() {
+	add_meta_box(
+	'list_package8_other_travel_dates',
+	__( 'For Other Travel Dates', 'myplugin_textdomain' ),
+	'list_package_other_travel_dates_content',
+	'travel_package',
+	'normal',
+	'high'
+			);
+
+}
+
+function list_package_other_travel_dates_content( $post ) {
+
+	wp_nonce_field( 'travel_package_meta_box8', 'travel_package_meta_box_nonce8' );
+	
+	$list_package_other_travel_dates_honeymoon = get_post_meta($post->ID, 'list_package_other_travel_dates_honeymoon', true);
+	$list_package_other_travel_dates_holiday = get_post_meta($post->ID, 'list_package_other_travel_dates_holiday', true);
+
+	echo '<div class="travel_admin_checkbox" ><label class="travel_admin_label" for="list_package_notes_added_value">Honeymoon: </label>';
+	echo '<input type="text" id="list_package_other_travel_dates_honeymoon" name="list_package_other_travel_dates_honeymoon" size="50" placeholder="Enter URL of Honeymoon Travel Button" value="';
+	echo $list_package_other_travel_dates_honeymoon;
+	echo '"></div>';
+	
+	echo '<div class="travel_admin_checkbox" ><label class="travel_admin_label" for="list_package_notes_added_value">Holiday: </label>';
+	echo '<input type="text" id="list_package_other_travel_dates_holiday" name="list_package_other_travel_dates_holiday" size="50" placeholder="Enter URL of Holiday Travel Button" value="';
+	echo $list_package_other_travel_dates_holiday;
+	echo '"></div>';
+	
+
+}
+
+add_action( 'save_post', 'list_package_other_travel_dates_save' );
+function list_package_other_travel_dates_save( $post_id ) {
+
+	if ( ! isset( $_POST['travel_package_meta_box_nonce6'] ) ) {
+		return;
+	}
+	if ( ! wp_verify_nonce( $_POST['travel_package_meta_box_nonce6'], 'travel_package_meta_box6' ) ) {
+		return;
+	}
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+
+	if(isset($_POST["list_package_other_travel_dates_honeymoon"])){
+		$list_package_other_travel_dates_honeymoon = $_POST['list_package_other_travel_dates_honeymoon'];
+		update_post_meta($post_id, 'list_package_other_travel_dates_honeymoon', $list_package_other_travel_dates_honeymoon);
+	}
+	
+	if(isset($_POST["list_package_other_travel_dates_holiday"])){
+		$list_package_other_travel_dates_holiday = $_POST['list_package_other_travel_dates_holiday'];
+		update_post_meta($post_id, 'list_package_other_travel_dates_holiday', $list_package_other_travel_dates_holiday);
+	}
+}
+
+
+
+// Package Exclusive Deal box
+add_action( 'add_meta_boxes', 'list_package_notes' );
+function list_package_notes() {
+
+	add_meta_box(
+	'list_package7_notes',
+	__( 'Package Promotion', 'myplugin_textdomain' ),
+	'list_package_notes_content',
+	'travel_package',
+	'normal',
+	'high'
+			);
+
+}
+
+function list_package_notes_content( $post ) {
+
+	wp_nonce_field( 'travel_package_meta_box7', 'travel_package_meta_box_nonce7' );
+	$list_package_notes = get_post_meta($post->ID, 'list_package_notes', true);
+	
+	$list_package_notes_exclusive_sale = get_post_meta($post->ID, 'list_package_notes_exclusive_sale', true);
+	$list_package_notes_added_value = get_post_meta($post->ID, 'list_package_notes_added_value', true);
+	$list_package_notes_value_inclusion_1 = get_post_meta($post->ID, 'list_package_notes_value_inclusion_1', true);
+	$list_package_notes_value_inclusion_2 = get_post_meta($post->ID, 'list_package_notes_value_inclusion_2', true);
+	
+	echo '<div class="travel_admin_checkbox" ><input type="checkbox" class="travel_package_promotion_checkbox" name="package_notes" value="exclusive_sale" ';
+	
+	if($list_package_notes == "exclusive_sale"){
+		echo " checked ";
+	}
+	
+	echo '/> Exclusive Sale</div>';
+	echo '<label class="travel_admin_label" for="list_package_notes_exclusive_sale">Pecentage Discount: </label>';
+	echo '<input type="text" id="list_package_notes_exclusive_sale" name="list_package_notes_exclusive_sale" size="50" placeholder="Enter package discount in percentage here" value="';
+	echo $list_package_notes_exclusive_sale;
+	echo '">%';
+	
+	echo '<div class="travel_admin_checkbox" ><input type="checkbox" class="travel_package_promotion_checkbox" name="package_notes" value="added_value"';
+	
+	if($list_package_notes == "added_value"){
+		echo " checked ";
+	}
+	echo '/> Added Value</div>';
+	
+	echo '<label class="travel_admin_label" for="list_package_notes_added_value">Value: </label>';
+	echo '$<input type="text" id="list_package_notes_added_value" name="list_package_notes_added_value" size="50" placeholder="Enter added value in AUD" value="';
+	echo $list_package_notes_added_value;
+	echo '">';
+	
+	echo '<div class="travel_admin_inclusion_label" > <label>Inclusions: </label> </div>';
+	echo '<div class="travel_admin_inclusion_label"><label class="travel_admin_label" for="list_package_notes_value_inclusion_1">1: </label>';
+	echo '<input type="text" id="list_package_notes_value_inclusion_1" name="list_package_notes_value_inclusion_1" size="100" placeholder="Enter added value inclusion 1" value="';
+	echo $list_package_notes_value_inclusion_1;
+	echo '"></div>';
+	echo '<div class="travel_admin_inclusion_label"><label class="travel_admin_label" for="list_package_notes_value_inclusion_2">2: </label>';
+	echo '<input type="text" id="list_package_notes_value_inclusion_2" name="list_package_notes_value_inclusion_2" size="100" placeholder="Enter added value inclusion 2" value="';
+	echo $list_package_notes_value_inclusion_2;
+	echo '"></div>';
+	
+	
+
+}
+
+add_action( 'save_post', 'list_package_notes_save' );
+function list_package_notes_save( $post_id ) {
+
+	if ( ! isset( $_POST['travel_package_meta_box_nonce7'] ) ) {
+		return;
+	}
+	if ( ! wp_verify_nonce( $_POST['travel_package_meta_box_nonce7'], 'travel_package_meta_box7' ) ) {
+		return;
+	}
+	
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+	
+	if(!empty($_POST['package_notes']) && !is_array($_POST['package_notes'])) {
+		
+		update_post_meta($post_id, 'list_package_notes', $_POST['package_notes']);
+	}else{
+		update_post_meta($post_id, 'list_package_notes', "");
+	}
+	
+	
+
+	if(isset($_POST["list_package_notes_exclusive_sale"])){
+		$list_package_notes_exclusive_sale = $_POST['list_package_notes_exclusive_sale'];
+		update_post_meta($post_id, 'list_package_notes_exclusive_sale', $list_package_notes_exclusive_sale);
+	}
+	
+	if(isset($_POST["list_package_notes_added_value"])){
+		$list_package_notes_added_value = $_POST['list_package_notes_added_value'];
+		update_post_meta($post_id, 'list_package_notes_added_value', $list_package_notes_added_value);
+	}
+	
+	if(isset($_POST["list_package_notes_value_inclusion_1"])){
+		$list_package_notes_value_inclusion_1 = $_POST['list_package_notes_value_inclusion_1'];
+		update_post_meta($post_id, 'list_package_notes_value_inclusion_1', $list_package_notes_value_inclusion_1);
+	}
+	
+	if(isset($_POST["list_package_notes_value_inclusion_2"])){
+		$list_package_notes_value_inclusion_2 = $_POST['list_package_notes_value_inclusion_2'];
+		update_post_meta($post_id, 'list_package_notes_value_inclusion_2', $list_package_notes_value_inclusion_2);
+	}
+	
+}
+

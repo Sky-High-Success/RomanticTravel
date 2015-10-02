@@ -122,7 +122,7 @@ function get_all_packages_meta(){
 function exclude_plugins_from_auto_update( $update, $item ) {
 		
 	return ( ! in_array( $item->slug, array(
-			'indeed-social-media', 'scarcity-samurai') ) 
+			'indeed-social-media', 'scarcity-samurai', 'layerslider', 'geodirectory') ) 
 		   );
 }
 add_filter( 'auto_update_plugin', 'exclude_plugins_from_auto_update', 10, 2 );

@@ -50,21 +50,9 @@
 
 ?>
 
-  <div class="sectiontravel row">
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 texttravel">
-      <h3 class="hidden-xs hidden-sm">
-        <a title="<?php echo $package_information['package_name'];?>" href="<?php echo $package_information['package_url'];?>"><?php echo $package_information['package_name']." | ".$package_information['package_pricing'];?></a>
-      </h3>
-      
-      <h3 class="visible-xs visible-sm">
-        <a title="<?php echo $package_information['package_name'];?>" href="<?php echo $package_information['package_url'];?>"><?php echo $package_information['package_name'];?></a>
-      </h3>
-      
-      <p class="text-p"><?php echo $package_information['package_excerpt'];?></p>
-      <a href="<?php echo $package_information['package_url'];?>">more info...</a>
-    </div>
+  <div class="sectiontravel row">    
 
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
       <div class="icontravel icon-headphones">
       
       		<?php if($list_package_notes == "exclusive_sale" || $list_package_notes == "added_value" ){
@@ -120,6 +108,20 @@
         </a>
       </div>
     </div>
+       
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-7 texttravel">
+      <h3 class="hidden-xs hidden-sm">
+        <a title="<?php echo $package_information['package_name'];?>" href="<?php echo $package_information['package_url'];?>"><?php echo $package_information['package_name']." | ".$package_information['package_pricing'];?></a>
+      </h3>
+      
+      <h3 class="visible-xs visible-sm">
+        <a title="<?php echo $package_information['package_name'];?>" href="<?php echo $package_information['package_url'];?>"><?php echo $package_information['package_name'];?></a>
+      </h3>
+      
+      <p class="text-p"><?php echo $package_information['package_excerpt'];?></p>
+      <a class="text-a" href="<?php echo $package_information['package_url'];?>">more info...</a>
+    </div>
+    
   </div>
   
   <div class="clearfix"></div>

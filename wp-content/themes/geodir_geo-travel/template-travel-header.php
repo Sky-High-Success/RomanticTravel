@@ -249,7 +249,7 @@ DOC;
     <meta name="keywords" content="romantic, travel, honeymoon, love, package, cheap, deal" />
     <!-- Favicon-->
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri();?>/images/favicon.ico" type="image/x-icon" />
-	<link rel='stylesheet' id='geo-travel-theme-css'  href='http://romantictravel.com.au/wp-content/themes/geodir_geo-travel/style.css?ver=1.0.0' type='text/css' media='all' />
+	<link rel='stylesheet' id='geo-travel-theme-css'  href='http://romantictravel.com.au/wp-content/themes/geodir_geo-travel/style.css' type='text/css' media='all' />
     <?php wp_head(); ?>
     
 
@@ -315,7 +315,7 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
 </style>
 	
 </head>
-  <body class="travel-style">
+  <body class="travel-style <?php if(is_page(16)) { ?> CruiseBlogTemplate full-width-content " <?php } ?> >
   
 
   
@@ -325,13 +325,28 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
 				<?php $description = get_bloginfo( 'description', 'display' ); ?>
 				<h1 itemprop="headline" class="site-title"><a href="<?php echo home_url('/'); ?>"  style="display: block; text-indent: -9999px;"><?php  bloginfo( 'name' );  ?></a></h1>
 				<!--<h2 itemprop="description" class="site-description"><?php echo $description; ?></h2>-->
-			</div>
+			</div> 
+			
 			<div class="rightheader">
+				<?php if(!is_page(16)) { ?> 
 				<div class="newAddtionalButtons">
-					<a href="javascript:;" class="CustmHedaerBtns">Get a Quote</a>
+					<!--<a href="javascript:;" class="CustmHedaerBtns">Get a Quote</a>-->
+<ul class="abc">
+                                                  <li class="dropdown">
+                                              <a href="<?php echo get_home_url();?>" class="getquote_anchor quote buton_custom hidden-sm hidden-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="SliderPackagesbtn">
+                                                  Plan your trip
+                                              </a> 
+                                             <ul class="trip dropdown-menu">
+                                                <li><a class="hidden-sm hidden-xs" href="http://worldtravelgroup.reslogic.com/?pl=21&screen=scnWizardSteps">Holiday</a></li>
+                                                <li><a class="hidden-sm hidden-xs" href="http://worldtravelgroup.reslogic.com/?pl=56&screen=scnWizardSteps">Honeymoon</a></li>
+                                              </ul>
+                                                  </li>
+                                              </ul>
 					<a href="#" class="hidden-xs enquiry_anchor CustmHedaerBtns" data-toggle="modal" data-target="#enquiryModal" data-package_quote="general">Online Enquiry</a>
 					<a href="<?php echo get_home_url(null,"package-enquiry"); ?>" class="visible-xs-inline-block enquiry_anchor CustmHedaerBtns" data-package_quote="general">Online Enquiry</a>
 				</div>
+				
+			<?php } ?>
 				<div class="EnquiryWidgetText">
 					<?php dynamic_sidebar('Header Right'); ?>
 				</div>
@@ -361,7 +376,7 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
     }
    ?>
    </div>
-    
+   <?php if(!is_page(16)) { ?> 
    <section class="ads-main-page">
 
     	<div class="container">
@@ -370,4 +385,4 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
 
 				<div class="ad-detail-content">
 
-	    			
+   <?php } ?>	    			

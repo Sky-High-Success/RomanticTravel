@@ -15,14 +15,16 @@
 	<div class="site-inner">
 		<div class="wrap">
 			<div class="content-sidebar-wrap">
-				<main class="content" role="main">
+				<main class="content" itemtype="http://schema.org/Blog" itemscope="itemscope" itemprop="mainContentOfPage" role="main">
 					<?php 
 						$posts = query_posts( array('cat' => 3, 'posts_per_page' => get_option('posts_per_page')) );
 						while ( have_posts() ) : the_post();
 					?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 							<header class="entry-header">
-								<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+							<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+							</a>
 							</header>
 							<div class="entry-content">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">

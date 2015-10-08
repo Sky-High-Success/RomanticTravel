@@ -8,7 +8,7 @@
  */
 ?>
 
-
+ <?php if(!is_page(16)) { ?> 
 
 	    		</div>
 	    		
@@ -21,7 +21,7 @@
 
     </section>
     
-<?php
+ <?php } 
   $modal_type = array("enquiry","booking");
   for ($i=0;$i<count($modal_type);$i++){
 ?> 	

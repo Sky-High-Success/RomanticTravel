@@ -331,17 +331,14 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
 				<?php if(!is_page(16)) { ?> 
 				<div class="newAddtionalButtons">
 					<!--<a href="javascript:;" class="CustmHedaerBtns">Get a Quote</a>-->
-<ul class="abc">
-                                                  <li class="dropdown">
-                                              <a href="<?php echo get_home_url();?>" class="getquote_anchor quote buton_custom hidden-sm hidden-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="SliderPackagesbtn">
-                                                  Plan your trip
-                                              </a> 
-                                             <ul class="trip dropdown-menu">
-                                                <li><a class="hidden-sm hidden-xs" href="http://worldtravelgroup.reslogic.com/?pl=21&screen=scnWizardSteps">Holiday</a></li>
-                                                <li><a class="hidden-sm hidden-xs" href="http://worldtravelgroup.reslogic.com/?pl=56&screen=scnWizardSteps">Honeymoon</a></li>
-                                              </ul>
-                                                  </li>
-                                              </ul>
+ <div class="dropdown hidden-sm hidden-xs">
+    <button class="btn plantrip CustmHedaerBtns dropdown-toggle" type="button" data-toggle="dropdown">Plan Your Trip
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="http://worldtravelgroup.reslogic.com/?pl=21&screen=scnWizardSteps">Holiday</a></li>
+      <li><a href="http://worldtravelgroup.reslogic.com/?pl=56&screen=scnWizardSteps">Honeymoon</a></li>
+    </ul>
+  </div>
 					<a href="#" class="hidden-xs enquiry_anchor CustmHedaerBtns" data-toggle="modal" data-target="#enquiryModal" data-package_quote="general">Online Enquiry</a>
 					<a href="<?php echo get_home_url(null,"package-enquiry"); ?>" class="visible-xs-inline-block enquiry_anchor CustmHedaerBtns" data-package_quote="general">Online Enquiry</a>
 				</div>

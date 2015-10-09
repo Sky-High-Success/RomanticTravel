@@ -252,7 +252,7 @@ DOC;
 	<link rel='stylesheet' id='geo-travel-theme-css'  href='http://romantictravel.com.au/wp-content/themes/geodir_geo-travel/style.css' type='text/css' media='all' />
     <?php wp_head(); ?>
     
-
+    <script src='https://www.google.com/recaptcha/api.js' async></script>
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

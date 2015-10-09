@@ -241,7 +241,7 @@
   	          <div class="form-group">
   	            <div class="row-fluid">
   	            <div class="col-md-7">
-  	            	<label>Captcha</label>
+  	            	
   	                  
   	               <div class="g-recaptcha" data-sitekey="6LcPcg4TAAAAACu4VxJMGV3ei2ALZxwwS2Gov5Kv" data-callback='recaptcha_callback'></div>
   	          

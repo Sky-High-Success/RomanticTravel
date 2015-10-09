@@ -26,6 +26,7 @@ function layerslider_init($atts) {
 	// Decode data
 	$slides = $slider['data'];
 
+
 	// Returned data
 	$data = '';
 

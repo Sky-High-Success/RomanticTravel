@@ -208,13 +208,16 @@ class LS_Sliders {
 		if($id == null) {
 			return false;
 		}
-
+		
+		
 		global $wpdb;
 		$table = $wpdb->prefix.LS_DB_TABLE;
 
 		$result = $wpdb->get_row("SELECT * FROM $table WHERE id = '$id' LIMIT 1", ARRAY_A);
+		
 		$result['data'] = json_decode($result['data'], true);
 
+		
 		return $result;
 	}
 }

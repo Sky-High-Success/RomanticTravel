@@ -338,7 +338,7 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
       <li><a href="http://worldtravelgroup.reslogic.com/?pl=21&screen=scnWizardSteps">Holiday</a></li>
       <li><a href="http://worldtravelgroup.reslogic.com/?pl=56&screen=scnWizardSteps">Honeymoon</a></li>
     </ul>
-  </div>
+ </div>
 					<a href="#" class="hidden-xs enquiry_anchor CustmHedaerBtns" data-toggle="modal" data-target="#enquiryModal" data-package_quote="general">Online Enquiry</a>
 					<a href="<?php echo get_home_url(null,"package-enquiry"); ?>" class="visible-xs-inline-block enquiry_anchor CustmHedaerBtns" data-package_quote="general">Online Enquiry</a>
 				</div>

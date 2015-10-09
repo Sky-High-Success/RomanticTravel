@@ -286,7 +286,7 @@
   	          
   	          <div class="form-group">
   	          	<div class="row-fluid">
-  	            <div class="col-md-7">            	
+  	            <div class="col-md-8">            	
   	        	 	<button type="submit" name="submit" value="<?php echo $form_type;?>" class="mobile-enquiry-button btn btn-success">Send It!</button> <p class="help-block pull-left text-danger hide">&nbsp; The form is not valid. </p>
   	        
   	            </div>
@@ -307,7 +307,23 @@
 		  <?php if(!empty($package_information['package_name'])){?>
 		  	$("#package_hidden").val("<?php echo $package_information['package_name']." / ".$package_information['package_pricing'];?>");
 		  <?php } ?>
-		  $("#contactForm").validate(); 
+		  
+		  var contact_validator = $("#contactForm").validate(); 
+
+	      $("#contactForm button[type=submit]").on("click", function(event){
+
+	       		contact_validator.form();
+
+	       		if (grecaptcha.getResponse() == "") {
+	  			    var errors;
+	  			    /* Build up errors object, name of input and error message: */
+	  			    errors = { "g-recaptcha-response" : "You have to go through CAPTCHA check" };
+	  			    /* Show errors on the form */
+	  			    contact_validator.showErrors(errors);
+	  			    event.preventDefault();            
+	  			}
+	           	 
+	      });
 		  
 	  });
 </script>

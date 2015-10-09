@@ -331,7 +331,7 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
 				<?php if(!is_page(16)) { ?> 
 				<div class="newAddtionalButtons">
 					<!--<a href="javascript:;" class="CustmHedaerBtns">Get a Quote</a>-->
- <div class="dropdown hidden-sm hidden-xs">
+ <div class="dropdown">
     <button class="btn plantrip CustmHedaerBtns dropdown-toggle" type="button" data-toggle="dropdown">Plan Your Trip
     <span class="caret"></span></button>
     <ul class="dropdown-menu">

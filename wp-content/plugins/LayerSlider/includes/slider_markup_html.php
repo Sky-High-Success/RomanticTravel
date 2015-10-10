@@ -6,6 +6,7 @@ if(isset($slides['properties']['props']['forceresponsive'])) {
 	$data[] = '<div class="ls-wp-fullwidth-helper">';
 }
 
+
 // Get slider style
 $sliderStyleAttr[] = 'width:'.layerslider_check_unit($slides['properties']['props']['width']).';';
 $sliderStyleAttr[] = 'height:'.layerslider_check_unit($slides['properties']['props']['height']).';';
@@ -26,6 +27,7 @@ if(has_action('layerslider_before_slider_content')) {
 
 // Start of slider container
 $data[] = '<div id="layerslider_'.$id.'" class="ls-wp-container" style="'.implode('', $sliderStyleAttr).'">';
+
 
 // Add slides
 if(!empty($slider['slides']) && is_array($slider['slides'])) {
@@ -231,6 +233,9 @@ if(!empty($slider['slides']) && is_array($slider['slides'])) {
 		$data[] = '</div>';
 	}
 }
+
+
+
 
 // End of slider container
 $data[] = '</div>';

@@ -251,7 +251,7 @@
   	          
   	          <div class="form-group">
   	            <div class="row-fluid">
-  	            <div class="col-md-7">
+  	            <div class="col-md-8">
   	            	
   	                  
   	               <div class="g-recaptcha" data-sitekey="6LcPcg4TAAAAACu4VxJMGV3ei2ALZxwwS2Gov5Kv" data-callback='recaptcha_callback'></div>
@@ -261,8 +261,7 @@
   	                 
   	                   
   	          </div>
-  	          
-  	         
+
   	          
   	          <div class="form-group">
   	          	<div class="row-fluid">

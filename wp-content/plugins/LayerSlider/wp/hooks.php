@@ -57,9 +57,10 @@ function ls_get_thumbnail($id = null, $url = null) {
 function ls_get_image($id = null, $url = null) {
 
 	if(!empty($id)) {
-		if($image = wp_get_attachment_url($id, 'thumbnail')) {
-			return $image;
-		}
+		// removed by Jack in favor of right image url
+// 		if($image = wp_get_attachment_url($id, 'thumbnail')) {
+// 			return $image;
+// 		}
 	}
 
 	return $url;

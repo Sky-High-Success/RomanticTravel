@@ -28,7 +28,7 @@
   	case "cook-islands":
   		$current_package_name = "The ".$current_package_name;
   		break;
-  	case "phillippenes":
+  	case "philippines":
   		$current_package_name = "The ".$current_package_name;
   		break;
   	case "qld-islands":

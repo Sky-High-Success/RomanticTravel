@@ -16,9 +16,29 @@
 
 <?php include_once "template-travel-header.php";?>
 
-<?php if ( have_posts() ) : ?>
+<?php if ( have_posts() ) : 
+  
+  $current_package_slug = get_query_var( 'package_taxonomy');
+  $current_package_name = get_term_by('slug', $current_package_slug, 'package_taxonomy' )->name;
+  
+  switch($current_package_slug){
+  	case "maldives":
+  		$current_package_name = "The ".$current_package_name;
+ 		break;
+  	case "cook-islands":
+  		$current_package_name = "The ".$current_package_name;
+  		break;
+  	case "phillippenes":
+  		$current_package_name = "The ".$current_package_name;
+  		break;
+  	case "qld-islands":
+  		$current_package_name = "The ".$current_package_name;
+  		break;
+  	default:
+  }
+?>
 
-<h3 class="travel-h3">POPULAR DESTINATIONS &amp; PACKAGES</h3>
+<h3 class="travel-h3">Popular Destinations and Packages for <?php echo $current_package_name;?></h3>
 
 <div class="containertravel">
 

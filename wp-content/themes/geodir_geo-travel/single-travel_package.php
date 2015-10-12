@@ -75,13 +75,13 @@ echo do_shortcode('[layerslider id="'.$package_information['package_layer_slider
 	  <div class="col-lg-12">
 	  <?php }?>
     	  
-		  <div class="visible-lg visible-md col-lg-4 col-md-5 no-left-padding">
+<!-- 		  <div class="visible-lg visible-md col-lg-4 col-md-5 no-left-padding">
 		    <a class="enquiry_anchor" href="#" data-toggle="modal" data-package_quote="specific" data-target="#enquiryModal"><img src="<?php echo get_stylesheet_directory_uri()."/images/enquire-now-300x75.png"; ?>" alt="enquire now" /></a>
-		  </div>
+			  </div>
 		
-		  <div class="visible-xs visible-sm col-sm-6 col-xs-8">
+			  <div class="visible-xs visible-sm col-sm-6 col-xs-8">
 		    <a class="enquiry_anchor" id="enquiry-button-2" data-package_quote="specific" href="<?php echo get_home_url(null,"package-enquiry"); ?>" ><img src="<?php echo get_stylesheet_directory_uri()."/images/enquire-now-300x75.png"; ?>" alt="enquire now" /></a>
-		  </div>
+			  </div> -->
 		  <div class="clearfix"></div>
 		  <h3>INCLUDES:</h3>
 		  <p>
@@ -92,7 +92,7 @@ echo do_shortcode('[layerslider id="'.$package_information['package_layer_slider
 		  <?php echo $package_information['package_detail_validity'];?>
 		  </p>
 		  
-		  <h3 class="other_dates_text">For Other Travel Dates:</h3>
+		  <h3 class="other_dates_text">For Other Travel Dates click below for either a Honeymoon or Holiday:</h3>
 		  
 		  <div class="row other_dates_div">
 		  		<div id="other_dates_honeymoon" class="visible-lg visible-md col-md-3 col-md-offset-2">

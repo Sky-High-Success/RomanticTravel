@@ -21,8 +21,8 @@
 		exit;
 	}
 	
-	$post_name = $_POST["post_name"];
-	$post_type = $_POST["post_type"];
+	$post_name = $_POST["request_post_name"];
+	$post_type = $_POST["request_post_type"];
 	
 	if(!empty($post_name)){
 		
@@ -46,7 +46,7 @@
 		$result = array("valid" => "0", "post_id" => "0");
 	}
 	
-	echo $post_type;
-	//echo json_encode($result);
+	
+	echo json_encode($result);
 	exit;
 ?>

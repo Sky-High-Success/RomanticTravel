@@ -22,6 +22,7 @@
 	}
 	
 	$post_name = $_POST["post_name"];
+	$post_type = $_POST["post_type"];
 	
 	if(!empty($post_name)){
 		
@@ -31,7 +32,7 @@
 		
 		$meta_table = $wpdb->prefix.'postmeta';
 				
-		$id = $wpdb->get_var("SELECT ID FROM $post_table WHERE post_name = '".$post_name."'");
+		$id = $wpdb->get_var("SELECT ID FROM $post_table WHERE post_name = '".$post_name."' and post_type = '".$post_type."'");
 		if($id){
 			
 			$meta = $wpdb->get_results( "SELECT * FROM $meta_table WHERE post_id = $id", ARRAY_A );

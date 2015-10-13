@@ -46,8 +46,7 @@
 		$result = array("valid" => "0", "post_id" => "0");
 	}
 	
-	echo "SELECT ID FROM $post_table WHERE post_name = '".$post_name."' and post_type = '".$post_type."'";
-	
+	echo $post_type;
 	//echo json_encode($result);
 	exit;
 ?>

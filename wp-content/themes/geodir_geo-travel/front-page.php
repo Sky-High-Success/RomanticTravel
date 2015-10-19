@@ -19,11 +19,32 @@ function geotravel_front_page_enqueue_scripts() {
 	wp_enqueue_script( 'geotravel-backstretch', get_bloginfo( 'stylesheet_directory' ) . '/js/backstretch.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_script( 'geotravel-backstretch-set', get_bloginfo( 'stylesheet_directory' ).'/js/backstretch-set.js' , array( 'jquery', 'geotravel-backstretch' ), '1.0.0' );
 
+	// Template
+	wp_enqueue_style ( 'bootstrap3-style', get_stylesheet_directory_uri () . '/css/bootstrap3.min.css', array (), '1.0.0' );
+	
+	wp_enqueue_style ( 'theme-custom-style', get_stylesheet_directory_uri () . '/css/theme.css', array (
+	'bootstrap3-style'
+			), '1.0.0' );
+	
+	// Loads JavaScript file with functionality specific to classiads.
+	wp_enqueue_script ( 'bootstrap3-js', get_stylesheet_directory_uri () . '/js/bootstrap3.min.js', array (
+	'jquery'
+			), '2014-07-18', true );
+	
 	wp_localize_script( 'geotravel-backstretch-set', 'BackStretchImg', array( 'src' => str_replace( 'http:', '', get_option( 'geotravel-home-image' ) ) ) );
 	
 	//* Add Geo Travel body class
 	add_filter( 'body_class', 'geotravel_body_class' );
 
+}
+
+add_action('genesis_meta','genesis_meta_content');
+
+add_action('genesis_after_footer','genesis_after_footer_modal');
+
+function genesis_meta_content() { ?>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<?php	
 }
 
 function geotravel_body_class( $classes ) {
@@ -93,6 +114,33 @@ function geotravel_home_widgets() {
 		'after'  => '</div></div>',
 	) );
 
+}
+
+function genesis_internet_after_footer() {
+	?>
+<script type="text/javascript">
+    jQuery(document).ready(function($){
+
+//     	var $tabPane = $('.tab-pane'),
+// 	        tabsHeight = $('.nav-tabs').height();
+	    
+// 	    $tabPane.css({
+// 	      height: tabsHeight
+// 	    });
+
+     if($("#detect_lg").is(":visible")){
+    	 $('#landing_modal').modal('show');
+
+     }	
+
+    });
+
+
+</script>
+
+
+
+<?php
 }
 
 genesis();

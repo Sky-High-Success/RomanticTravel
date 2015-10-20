@@ -13,7 +13,7 @@
 <?php
 
 
-	wp_enqueue_style( 'material-style', get_stylesheet_directory_uri() . '/css/material.min.css', array(), '1' );
+	wp_enqueue_style( 'material-style', get_stylesheet_directory_uri() . '/css/material-custom.min.css', array(), '1' );
 
 	wp_enqueue_style( 'ripples-style', get_stylesheet_directory_uri() . '/css/ripples.min.css', array(), '1' );
 

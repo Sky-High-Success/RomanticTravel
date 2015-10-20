@@ -345,7 +345,7 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
 							<?php if(!is_page(16)) { ?> 
 				
 								<li>
-									<div class="plan-trip-dropdown btn-group">
+									<div class="plan-trip-dropdown">
                                                  
                           
 			                           <a href="javascript:;" class="button button--nanuk button--border-thin button--round-s getquote_anchor quote CustmHedaerBtns button_effect dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
@@ -364,11 +364,11 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
 								</li>
 								
 								<li>
-									<a href="#" class="btn button button--nanuk button--border-thin button--round-s hidden-xs enquiry_anchor CustmHedaerBtns" data-toggle="modal" data-target="#enquiryModal" data-package_quote="general">
+									<a href="#" class="button button--nanuk button--border-thin button--round-s hidden-xs enquiry_anchor CustmHedaerBtns" data-toggle="modal" data-target="#enquiryModal" data-package_quote="general">
 										<span>O</span><span>n</span><span>l</span><span>i</span><span>n</span><span>e</span><span>&nbsp;</span>
 										<span>E</span><span>n</span><span>q</span><span>u</span><span>i</span><span>r</span><span>y</span><span>&nbsp;</span>
 									</a>
-									<a href="<?php echo get_home_url(null,"package-enquiry"); ?>" class="visible-xs-inline-block btn button button--nanuk button--border-thin button--round-s enquiry_anchor CustmHedaerBtns" data-package_quote="general">
+									<a href="<?php echo get_home_url(null,"package-enquiry"); ?>" class="visible-xs-inline-block button button--nanuk button--border-thin button--round-s enquiry_anchor CustmHedaerBtns" data-package_quote="general">
 										<span>O</span><span>n</span><span>l</span><span>i</span><span>n</span><span>e</span><span>&nbsp;</span>
 										<span>E</span><span>n</span><span>q</span><span>u</span><span>i</span><span>r</span><span>y</span><span>&nbsp;</span>
 									</a>

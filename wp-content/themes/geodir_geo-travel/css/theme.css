@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+#top-wrap{
+	overflow: inherit;
+}
+
 #top-wrap b, #top-wrap a{
 	font-family: Lato,sans-serif;
     font-size: 18px;
@@ -77,12 +81,15 @@ a:hover{
 	padding: 0 15px !important;
 	max-width: none;
 	line-height: 20px;
+	border: 0px;
+	float: none;
 }
 
 .CustmHedaerBtns:hover, .CustmHedaerBtns:focus, .CustmHedaerBtns:active {
 	background-color: #d4131b !important;
 	color: #fff !important;
 	border-radius: 0;
+	border: 0px;
 }
 .navbar-nav > li {
 	padding-right: 10px;
@@ -90,6 +97,19 @@ a:hover{
 
 #top-wrap .btn-group{
 	width: 100%;
+}
+
+.trip.dropdown-menu li{
+	padding-top: 10px;
+}
+
+.trip.dropdown-menu li a:hover{
+	background-color: #d4131b;
+	color: #fff;
+}
+
+.navbar-right .dropdown-menu{
+	left: 0;
 }
 
 @media (max-width:768px){
@@ -101,6 +121,10 @@ a:hover{
 		line-height: 10px;
 		width: 100%;
 		text-align: center;
+	}
+	
+	#top-wrap .dropdown-menu a{
+	  line-height: 20px;
 	}
 
 }

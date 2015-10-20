@@ -13,6 +13,11 @@
 <?php
 
 
+	wp_enqueue_style( 'material-style', get_stylesheet_directory_uri() . '/css/material.min.css', array(), '1' );
+
+	wp_enqueue_style( 'ripples-style', get_stylesheet_directory_uri() . '/css/ripples.min.css', array(), '1' );
+
+
     wp_enqueue_style( 'plan-style', get_stylesheet_directory_uri() . '/plan.css', array(), '1' );
 
 	//Template
@@ -31,12 +36,15 @@
 	
 	wp_enqueue_style( 'fontawesome-style', get_stylesheet_directory_uri() . '/css/font-awesome.min.css', array(), '1.0.0' );
 	
-	
 	//Template
 	wp_enqueue_style( 'templatemo-style', get_stylesheet_directory_uri() . '/css/templatemo_style.css', array('bootstrap3-style'), '1.0.0' );
 
+	
 	//Template
 	wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array('bootstrap3-style'), '1.0.0' );
+	
+	
+	
 	
 	
 	// Loads JavaScript file with functionality specific to classiads.
@@ -44,6 +52,11 @@
 	
 	// Loads JavaScript file with functionality specific to classiads.
 	wp_enqueue_script( 'select-js', get_stylesheet_directory_uri() . '/js/bootstrap-select.min.js', array( 'bootstrap3-js' ), '2014-07-18', true );
+	
+	wp_enqueue_script( 'material', get_stylesheet_directory_uri() . '/js/material.min.js', array( 'jquery' ), '2014-07-18', true );
+	
+	
+	wp_enqueue_script( 'ripples', get_stylesheet_directory_uri() . '/js/ripples.min.js', array( 'jquery' ), '2014-07-18', true );
 	
 	
 	

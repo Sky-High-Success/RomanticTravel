@@ -336,6 +336,8 @@
    <script type="text/javascript">
                 jQuery(document).ready(function($){
 
+                  $.material.init();
+
                   $('.date-input-top').val("");
               	  
               	  $(".enquiry_anchor").click(function(){

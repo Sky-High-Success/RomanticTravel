@@ -857,8 +857,8 @@ backface-visibility: hidden;
 	border: 1px solid #eee !important;
 }
 
-.dropdown-menu{
-	right: 0px;
+#bookingModal .dropdown-menu, #enquiryModal .dropdown-menu{
+	width: 200px;
 }
 
 .banner-fixed-offset{

@@ -8,6 +8,11 @@ body {
     margin: 0;
 }
 
+.site-header .wrap{
+	width: 100%;
+	max-width: none;
+}
+
 #menu-menu-1{
 	margin-bottom: 0px;
 }
@@ -21,4 +26,33 @@ a {
 a:hover{
   color: #333;
   text-decoration: none;	
+}
+
+
+
+.header-logo img{
+    height: 80px;
+    width: 320px;
+	
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.nav-right-panel{
+	height: 100%;
+	margin-top: 10px;
+}
+
+.nav-right-panel .nav{
+/* 	margin-right: -100px; */
+	
+}
+
+.header-info{
+	text-align: center;
+    width: 200px;
 }

@@ -616,9 +616,10 @@ div.box-notification a:hover {
 
 #package_list{
 	height: auto;
-    max-height: 200px;
+    max-height: 230px;
     overflow-x: hidden;
     overflow-y: scroll;
+    right: 0px;
 }
 
 #package_list_mobile{

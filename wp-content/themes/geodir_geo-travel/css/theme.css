@@ -8,6 +8,18 @@ body {
     margin: 0;
 }
 
+#top-wrap b, #top-wrap a{
+	font-family: Lato,sans-serif;
+    font-size: 18px;
+    line-height: 1.625;
+    font-weight: 300;
+}
+
+#top-wrap b{
+	font-weight: 700;
+	color: #333;
+}
+
 .site-header .wrap{
 	width: 100%;
 	max-width: none;

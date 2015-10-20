@@ -33,6 +33,10 @@
 	//Template
 	wp_enqueue_style( 'templatemo-style', get_stylesheet_directory_uri() . '/css/templatemo_style.css', array('bootstrap3-style'), '1.0.0' );
 
+	//Template
+	wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array('bootstrap3-style'), '1.0.0' );
+	
+	
 	// Loads JavaScript file with functionality specific to classiads.
 	wp_enqueue_script( 'bootstrap3-js', get_stylesheet_directory_uri() . '/js/bootstrap3.min.js', array( 'jquery' ), '2014-07-18', true );
 	
@@ -315,39 +319,50 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
 </style>
 	
 </head>
-  <body class="travel-style <?php if(is_page(16)) { ?> CruiseBlogTemplate full-width-content " <?php } ?> >
+  <body class="travel-style <?php if(is_page(16)) { ?> 
+       
+        CruiseBlogTemplate full-width-content <?php 
+
+  } ?>" >
   
 
   
 	<header itemtype="http://schema.org/WPHeader" itemscope="itemscope" role="banner" class="site-header">
-		<div class="wrap" style="margin:0 auto;">
-			<div class="title-area">
-				<?php $description = get_bloginfo( 'description', 'display' ); ?>
-				<h1 itemprop="headline" class="site-title"><a href="<?php echo home_url('/'); ?>"  style="display: block; text-indent: -9999px;"><?php  bloginfo( 'name' );  ?></a></h1>
-				<!--<h2 itemprop="description" class="site-description"><?php echo $description; ?></h2>-->
-			</div> 
+		<div id="top-wrap" class="wrap" style="margin: 0 auto;">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<a class="header-logo " href="<?php echo get_home_url(); ?>"><img
+							class="center-block" src="<?php echo get_bloginfo( 'stylesheet_directory' ) . '/images/romantic-travel.png'; ?>"></a>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 nav-right-panel">
 			
-			<div class="rightheader">
-				<?php if(!is_page(16)) { ?> 
-				<div class="newAddtionalButtons">
-					<!--<a href="javascript:;" class="CustmHedaerBtns">Get a Quote</a>-->
- <div class="dropdown">
-    <button class="btn plantrip CustmHedaerBtns dropdown-toggle" type="button" data-toggle="dropdown">Plan Your Trip
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="http://worldtravelgroup.reslogic.com/?pl=21&screen=scnWizardSteps">Holiday</a></li>
-      <li><a href="http://worldtravelgroup.reslogic.com/?pl=56&screen=scnWizardSteps">Honeymoon</a></li>
-    </ul>
- </div>
-					<a href="#" class="hidden-xs enquiry_anchor CustmHedaerBtns" data-toggle="modal" data-target="#enquiryModal" data-package_quote="general">Online Enquiry</a>
-					<a href="<?php echo get_home_url(null,"package-enquiry"); ?>" class="visible-xs-inline-block enquiry_anchor CustmHedaerBtns" data-package_quote="general">Online Enquiry</a>
-				</div>
+			
+						<ul class="nav navbar-nav navbar-right">
+							<?php if(!is_page(16)) { ?> 
 				
-			<?php } ?>
-				<div class="EnquiryWidgetText">
-					<?php dynamic_sidebar('Header Right'); ?>
+								<li>
+								</li>
+
+				
+							<?php } ?>
+							
+							<li>
+								<ul class="header-info center-block">
+									<li><b>ENQUIRE NOW</b></li>
+									<li><a href="tel:1300766666">1300 766 666</a></li>
+								</ul>
+							</li>
+							
+						</ul>
+			
+			
+					</div>
+			
 				</div>
 			</div>
+		    
 		</div>
 	</header>
 	<nav class="nav-primary" itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope" role="navigation">

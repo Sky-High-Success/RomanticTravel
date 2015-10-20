@@ -35,6 +35,13 @@ echo do_shortcode('[layerslider id="2"]');
 ?> 
 
 
+<script>
 
+            $(document).ready(function ($) {
+                // This command is used to initialize some elements and make them work properly
+                $.material.init();
+            });
+        
+</script>
 
 <?php include_once "template-travel-footer.php";?>

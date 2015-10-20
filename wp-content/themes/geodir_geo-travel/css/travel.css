@@ -853,8 +853,12 @@ backface-visibility: hidden;
 }
 
 .modal-dropdown-btn{
-	width: 160px;
+	width: 200px;
 	border: 1px solid #eee !important;
+}
+
+.dropdown-menu{
+	right: 0px;
 }
 
 .banner-fixed-offset{

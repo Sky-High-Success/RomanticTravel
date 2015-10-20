@@ -68,3 +68,39 @@ a:hover{
 	text-align: center;
     width: 200px;
 }
+
+.CustmHedaerBtns{
+	background-color: #d4131b;
+	color: #fff;
+	border-radius: 0;
+	margin: 0;
+	padding: 0 15px !important;
+	max-width: none;
+	line-height: 20px;
+}
+
+.CustmHedaerBtns:hover, .CustmHedaerBtns:focus, .CustmHedaerBtns:active {
+	background-color: #d4131b !important;
+	color: #fff !important;
+	border-radius: 0;
+}
+.navbar-nav > li {
+	padding-right: 10px;
+}
+
+#top-wrap .btn-group{
+	width: 100%;
+}
+
+@media (max-width:768px){
+	.navbar-nav > li {
+		padding-right: 0px;
+	}
+	
+	#top-wrap a{
+		line-height: 10px;
+		width: 100%;
+		text-align: center;
+	}
+
+}

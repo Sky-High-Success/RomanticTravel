@@ -23,6 +23,8 @@
 	//Template
 	wp_enqueue_style( 'travel-style', get_stylesheet_directory_uri() . '/css/travel.css', array(), '1.0.0' );
 	
+	wp_enqueue_style( 'buttons-style', get_stylesheet_directory_uri() . '/css/buttons.css', array(), '1.0.0' );
+	
 	wp_enqueue_style( 'update-travel-style', get_stylesheet_directory_uri() . '/update-travel.css', array(), '1.0.0' );
 	
 	wp_enqueue_style( 'datepicker-style', get_stylesheet_directory_uri() . '/css/datepicker3.css', array(), '1.0.0' );
@@ -332,17 +334,44 @@ ul#menu-menu-1 a:hover { text-decoration:none; }
 			<div class="container">
 
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 						<a class="header-logo " href="<?php echo get_home_url(); ?>"><img
 							class="center-block" src="<?php echo get_bloginfo( 'stylesheet_directory' ) . '/images/romantic-travel.png'; ?>"></a>
 					</div>
-					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 nav-right-panel">
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 nav-right-panel">
 			
 			
 						<ul class="nav navbar-nav navbar-right">
 							<?php if(!is_page(16)) { ?> 
 				
 								<li>
+									<div class="plan-trip-dropdown btn-group">
+                                                 
+                          
+			                           <a href="javascript:;" class="button button--nanuk button--border-thin button--round-s getquote_anchor quote CustmHedaerBtns button_effect dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+										<span>P</span><span>l</span><span>a</span><span>n</span><span>&nbsp;</span>
+										<span>y</span><span>o</span><span>u</span><span>r</span><span>&nbsp;</span>
+										<span>t</span><span>r</span><span>i</span><span>p</span>
+									   </a>
+                           
+         
+                           <ul class="trip dropdown-menu">
+                                <li><a href="http://worldtravelgroup.reslogic.com/?pl=3&screen=scnWizardSteps">Holiday</a></li>
+                                <li><a href="http://worldtravelgroup.reslogic.com/?pl=4&screen=scnWizardSteps">Honeymoon</a></li>
+                           </ul>
+                                                 
+                        </div>
+								</li>
+								
+								<li>
+									<a href="#" class="btn button button--nanuk button--border-thin button--round-s hidden-xs enquiry_anchor CustmHedaerBtns" data-toggle="modal" data-target="#enquiryModal" data-package_quote="general">
+										<span>O</span><span>n</span><span>l</span><span>i</span><span>n</span><span>e</span><span>&nbsp;</span>
+										<span>E</span><span>n</span><span>q</span><span>u</span><span>i</span><span>r</span><span>y</span><span>&nbsp;</span>
+									</a>
+									<a href="<?php echo get_home_url(null,"package-enquiry"); ?>" class="visible-xs-inline-block btn button button--nanuk button--border-thin button--round-s enquiry_anchor CustmHedaerBtns" data-package_quote="general">
+										<span>O</span><span>n</span><span>l</span><span>i</span><span>n</span><span>e</span><span>&nbsp;</span>
+										<span>E</span><span>n</span><span>q</span><span>u</span><span>i</span><span>r</span><span>y</span><span>&nbsp;</span>
+									</a>
 								</li>
 
 				

@@ -18,7 +18,7 @@ echo do_shortcode('[layerslider id="2"]');
 */
 ?> 
 
-<div id="templatemo_Search_Box" class="container_wapper hidden-sm hidden-xs" style="background:#fff !important; margin-top:20px;">
+<div id="templatemo_Search_Box" class="container_wapper hidden-sm hidden-xs" style="margin-top:20px;">
 
         <div class="container">
 

@@ -112,6 +112,22 @@ a:hover{
 	left: 0;
 }
 
+#templatemo_Search_Box{
+	background-color: inherit;
+}
+
+#package_search_submit1{
+	background-color: inherit;
+}
+
+#package_dropdown{
+	background-color: #fff;
+}
+
+#loginform{
+	margin-top: 20px;
+}
+
 @media (max-width:768px){
 	.navbar-nav > li {
 		padding-right: 0px;
@@ -128,3 +144,127 @@ a:hover{
 	}
 
 }
+
+.login-container{
+	
+	margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+/* login */
+
+.login-form-border{
+	border-left: 1px solid #dadbbc;
+}
+
+
+.login-form-border::before {
+    background-color: white;
+    content: "Or";
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 30px;
+    left: -8px;
+    line-height: 30px;
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+}
+
+
+.social-login-button {
+    background-color: #949494;
+    border: 0 none;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 9px 0;
+    position: relative;
+    text-align: center;
+    width: 70%;
+}
+
+#loginbtn{
+	width: 70%;
+}
+
+.forget-password{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.item-group-2{
+	text-align: left;
+}
+
+.social-login-button-facebook {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #4066a4 0px, #1d55a2 100%) repeat scroll 0 0;
+}
+
+.social-login-button-google {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #e25a40 0px, #db431c 100%) repeat scroll 0 0;
+}
+
+.social-login-button .social-login-icon{
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+    float: left;
+    width: 50px;
+}
+
+.social-login-button .social-login-icon i{
+	color: #fff;
+	font-size: 20px;
+}
+
+.social-login-text .login-text{
+	color: #fff;
+}
+
+@media (max-width:992px){
+	
+	.social-login-text .login-text .link-text{
+		display: none;
+	}
+	
+	.login-form-border{
+	    border-left: 0px solid #dadbbc;
+	    border-top: 1px solid #dadbbc;
+	}
+	
+	.login-form-border:before{
+		
+	    bottom: auto;
+	    height: auto;
+	    left: 50%;
+	    line-height: normal;
+	    margin-left: -45px;
+	    margin-top: 0;
+	    text-align: center;
+	    top: -8px;
+	    width: 80px;
+	
+	}
+	
+	
+	.social-text{
+	
+		margin-top: 30px;
+	}
+	
+	.switch-forms{
+	    margin-bottom: 20px;
+	}
+	
+	.login-container{
+		margin-top:10px;
+	}
+}
+
+.c-text-center{
+	text-align: center;
+}
+
+.c-pointer{
+	cursor: pointer;
+}
+

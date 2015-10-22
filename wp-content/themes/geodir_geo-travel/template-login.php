@@ -12,9 +12,49 @@
 
 <?php
 
+if ( is_user_logged_in() ) {
+	
+	wp_redirect(get_home_url());
+	exit();
+}
+
+if(isset($_POST['type_hidden']) && $_POST['type_hidden'] == "login" && isset($_POST['post_nonce_field']) && wp_verify_nonce($_POST['post_nonce_field'], 'post_nonce')) {
+
+	$email = esc_sql ( isset ( $_REQUEST ['login_email'] ) ? $_REQUEST ['login_email'] : '' );
+	$password = esc_sql ( isset ( $_REQUEST ['login_password'] ) ? $_REQUEST ['login_password'] : '' );
+	$remember = esc_attr(strip_tags($_POST['remember_me']));
+	
+	if ($remember)
+		$remember = true;
+	else
+		$remember = false;
+	
+	error_log($email);
+	error_log($password);
+	
+	$creds = array();
+	$creds['user_login'] = $email;
+	$creds['user_password'] = $password;
+	$creds['remember'] = $remember;
+	
+	$user = wp_signon( $creds, false );
+	if ( is_wp_error($user) ){
+		echo $user->get_error_message();
+	}
+	else{
+		wp_redirect(get_home_url());
+		exit();
+	}
+	
+}
+
+
 wp_enqueue_style ( 'Boxes-style', get_stylesheet_directory_uri () . '/css/Boxes.css', array (), '1' );
 
 include_once "template-travel-header.php";
+
+
+
 ?>
 
 
@@ -68,7 +108,12 @@ include_once "template-travel-header.php";
 								</div>
 								
 								<div class="form-group has-warning">
-									<button id="loginbtn" class="btn btn-warning center-block">Sign in</button>
+								
+									 <input type="hidden" name="type_hidden" value="login">
+         
+  	             					<?php wp_nonce_field('post_nonce', 'post_nonce_field'); ?>
+								
+									<button id="loginbtn" type="submit" class="btn btn-warning center-block">Sign in</button>
 								</div>
 								
 								<div class="form-group has-warning">
@@ -87,14 +132,14 @@ include_once "template-travel-header.php";
 							   <h4 class="text-center text-warning social-text">Social</h4>
 							
 							   <div class="form-group has-warning">
-							   		<a class="btn social-login-button social-login-button-facebook c-rounded-corners5 center-block" href="<?php echo wp_login_url( get_permalink()); ?>&action=wordpress_social_authenticate&provider=Facebook" id="loginFacebookButton">
+							   		<a class="btn social-login-button social-login-button-facebook c-rounded-corners5 center-block" href="<?php echo wp_login_url( get_home_url()); ?>&action=wordpress_social_authenticate&provider=Facebook" id="loginFacebookButton">
                								 <span class="social-login-icon"><i class="fa fa-facebook"></i></span>
                								 <span class="social-login-text"><span class="login-text c-hide"><span class="link-text">Sign in with </span><span class="link">Facebook</span></span></span>
            							</a>
 							   </div>
 							   
 							   <div class="form-group has-warning">
-								    <a class="btn social-login-button social-login-button-google c-rounded-corners5 center-block" href="<?php echo wp_login_url( get_permalink());?>&action=wordpress_social_authenticate&provider=Google" id="loginGoogleButton">
+								    <a class="btn social-login-button social-login-button-google c-rounded-corners5 center-block" href="<?php echo wp_login_url( get_home_url());?>&action=wordpress_social_authenticate&provider=Google" id="loginGoogleButton">
 						                <span class="social-login-icon"><i class="fa fa-google-plus"></i></span>
 						                <span class="social-login-text">
 						                	<span class="login-text c-hide">

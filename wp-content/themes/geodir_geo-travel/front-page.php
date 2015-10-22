@@ -46,7 +46,7 @@ function geotravel_front_page_enqueue_scripts() {
 
 add_action ( 'genesis_meta', 'genesis_meta_content' );
 
-add_action ( 'genesis_after_footer', 'genesis_after_footer_modal' );
+add_action ( 'genesis_after_footer', 'genesis_internet_after_footer' );
 function genesis_meta_content() {
 	?>
 <meta name="viewport"
@@ -97,6 +97,42 @@ function genesis_header_content() {
 
 			<ul class="nav navbar-nav navbar-right">
 				<li>
+					<?php
+						
+					  if ( !is_user_logged_in() ) { ?>
+					
+						<a href="<?php echo get_home_url(null,"login"); ?>" class="button button--nanuk button--border-thin button--round-s hidden-xs enquiry_anchor CustmHedaerBtns">
+							<i class="fa fa-power-off"></i>Log In
+						</a>
+					
+			    <?php }else{ 
+			    
+			    	      global $current_user, $userID;
+			    	
+			    	      get_currentuserinfo();
+			    	?>
+			    		
+			    		<div>
+			    			
+			    			<span>Hi, <?php echo $current_user->user_login; ?></span>
+			    			
+			    			
+			    		
+			    		</div>
+			    		<div>
+			    		
+			    			<a href="<?php echo wp_logout_url( get_home_url() ); ?>" class="button button--nanuk button--border-thin button--round-s hidden-xs enquiry_anchor CustmHedaerBtns">
+								<i class="fa fa-power-off"></i>Log out
+							</a>
+			    			
+			    		</div>
+			    		
+					  	
+				<?php }
+					
+					
+					?>
+					
 				</li>
 				<li>
 					<ul class="header-info center-block">

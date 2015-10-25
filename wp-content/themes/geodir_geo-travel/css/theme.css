@@ -159,7 +159,7 @@ a:hover{
 
 
 .login-form-border::before {
-    background-color: white;
+    background-color: #f5fcff;
     content: "Or";
     font-size: 1.1em;
     font-weight: bold;

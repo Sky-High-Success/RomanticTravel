@@ -72,7 +72,7 @@ include_once "template-travel-header.php";
 					<form  role="form" id="loginform" action="" method="post"
 						class="form-signin">
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-md-6 column-1">
 								<h4 class="text-center text-warning">Login</h4>
 					
 								<div class="form-group has-warning">
@@ -127,7 +127,7 @@ include_once "template-travel-header.php";
 								</div>
 								
 							</div>
-							<div class="col-md-6 login-form-border">
+							<div class="col-md-6 login-form-border column-2">
 							
 							   <h4 class="text-center text-warning social-text">Social</h4>
 							
@@ -172,6 +172,12 @@ include_once "template-travel-header.php";
 
             jQuery(document).ready(function ($) {
 
+                $(".login-container .box-icon").addClass("animated rubberBand");
+                $("#loginform h4").addClass("animated rubberBand");
+
+                $("#loginform .column-2 .form-group ").addClass("animated slideInRight");
+
+                $("#loginform .column-1 .form-group").addClass("animated slideInLeft");
                 //$(".ads-main-page").css("background-image",'url("<?php echo get_stylesheet_directory_uri () . '/images/6885777-blurred.jpg'; ?>")');
                 // This command is used to initialize some elements and make them work properly
                 

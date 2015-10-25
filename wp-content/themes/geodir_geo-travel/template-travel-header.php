@@ -39,6 +39,9 @@
 	//Template
 	wp_enqueue_style( 'templatemo-style', get_stylesheet_directory_uri() . '/css/templatemo_style.css', array('bootstrap3-style'), '1.0.0' );
 
+	//Template
+	wp_enqueue_style( 'animate-style', get_stylesheet_directory_uri() . '/css/animate.min.css', array('bootstrap3-style'), '1.0.0' );
+	
 	
 	//Template
 	wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array('bootstrap3-style'), '1.0.0' );

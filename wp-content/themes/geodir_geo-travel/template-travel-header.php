@@ -54,6 +54,10 @@
 	wp_enqueue_script( 'bootstrap3-js', get_stylesheet_directory_uri() . '/js/bootstrap3.min.js', array( 'jquery' ), '2014-07-18', true );
 	
 	// Loads JavaScript file with functionality specific to classiads.
+	wp_enqueue_script( 'waypoint-js', get_stylesheet_directory_uri() . '/js/jquery.waypoints.min.js', array( 'jquery' ), '2014-07-18', true );
+	
+	
+	// Loads JavaScript file with functionality specific to classiads.
 	wp_enqueue_script( 'select-js', get_stylesheet_directory_uri() . '/js/bootstrap-select.min.js', array( 'bootstrap3-js' ), '2014-07-18', true );
 	
 	wp_enqueue_script( 'material', get_stylesheet_directory_uri() . '/js/material.min.js', array( 'jquery' ), '2014-07-18', true );
